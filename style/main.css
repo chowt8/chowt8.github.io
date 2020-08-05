@@ -611,7 +611,7 @@ figcaption{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 40px 0px 60px 0px;
+    padding: 20px 0px 80px 0px;
 
     
 }
@@ -772,7 +772,6 @@ button:active .arrow-head2{
     .about p{
         height: 400px;
         width: 50%;
-        border: 1px solid red;
     }
 
     .about{
