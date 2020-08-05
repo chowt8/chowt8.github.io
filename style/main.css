@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #fafafa;
+}
+
+
 img {
     animation: fade 2s; 
 }
@@ -207,13 +212,14 @@ header{
     width: 100%;
     height: auto;
     max-width: 1440px;
-    margin: 80px 20px;
+    margin: 60px 20px;
     
 }
 
 .headline h1 {
     font-family: "Agrandir Regular";
     font-size: 30px;
+    font-weight: normal ;
     
 }
 
@@ -312,6 +318,7 @@ main{
 .inner-flex h2 {
     width: 100%;
     font-family: "Agrandir Narrow";
+    font-weight: normal;
     font-size: 40px;
     margin-bottom: 40px;
     
@@ -357,7 +364,7 @@ figcaption{
     display: flex;
     flex-flow: column wrap;
     height: auto;
-    padding-left: 20px;
+    padding: 40px 20px ;
     
 }
 
@@ -439,7 +446,7 @@ figcaption{
 }
 
 
-.project-info{
+.inner-flex .project-info{
     width: 100%;
     height: 320px;
     display: flex;
@@ -462,9 +469,14 @@ figcaption{
 
 .row h6{
     font-family: "Agrandir Italic";
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     
+}
+
+.row p {
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 
@@ -718,6 +730,7 @@ button:active .arrow-head2{
     .headline h1 {
         font-size: 40px;
         
+        
     }
     .section-header{
 
@@ -731,7 +744,7 @@ button:active .arrow-head2{
     }
 
 
-    .project-info{
+    .inner-flex .project-info{
         height: 160px;
     }
 
@@ -796,14 +809,6 @@ button:active .arrow-head2{
     
     }
 
-    .project-info{
-        height: 100px;
-        flex-flow: row nowrap;
-    }
-
-   .row{
-       width: 100%;
-   }
 
  
    .inner-flex p{
@@ -813,6 +818,20 @@ button:active .arrow-head2{
     padding-top: 10px;
     
     }
+
+
+    .inner-flex .project-info{
+        height: 100px;
+        flex-flow: row nowrap;
+    }
+
+   .row{
+       width: 100%;
+   }
+
+   .row p {
+       font-size: 30px;
+   }
 
 
 
