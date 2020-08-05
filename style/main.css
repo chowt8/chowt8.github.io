@@ -1,0 +1,884 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+@font-face {
+    font-family: "Agrandir Narrow";
+    src: url(./fonts/Agrandir-Narrow.otf);
+}
+
+@font-face {
+    font-family: "Agrandir Regular";
+    src: url(./fonts/Agrandir-Regular.otf);
+}
+
+@font-face {
+    font-family: "Agrandir Italic";
+    src: url(./fonts/Agrandir-Italic.otf);
+}
+
+/* Navigation Styles------------------------------------------------------------------ */
+    nav{
+        display: flex;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid black;
+        justify-content: center;
+        z-index: 12;
+        position: fixed;
+
+
+    }
+
+    /* container for all navigation items */
+    .nav-container{
+        width: 100%;
+        height: auto;
+        max-width: 1440px;
+        margin: 0px 20px;
+        display: flex;
+        width: 100%;
+        padding: 10px 0px;
+        justify-content: space-between;
+        align-items: baseline;
+
+    }
+
+    .logo h4 a{
+        font-family: "Agrandir Regular";
+        font-weight: normal;
+        font-size: 20px;
+        z-index: 11;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        
+    }
+
+    /* flex containter for navigation links */
+    .nav-list{
+        position: absolute;
+        font-family: "Agrandir Narrow", sans-serif;
+        font-size: 40px;
+        list-style: none;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-items: center;
+        left: 0;
+        top: -700px;
+        width: 100%;
+        height: 600px;
+        padding: 0 20px;
+        opacity:0%;
+        background-color: white;
+        border-bottom: 1px solid black;
+        transition: transform .5s ease, opacity .2s ease ;
+        
+        
+    }
+
+    .nav-active{
+        transform: translateY(760px);
+        opacity: 100%;
+    }
+
+    .nav-list li{
+        max-width: 1440px; 
+        width: 100%;
+        padding: 20px 0px;
+
+    }
+
+    .nav-list a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-list a:hover{
+        text-decoration: underline;
+        cursor:pointer;
+    }
+
+    .nav-list a:active{
+        text-decoration: underline;
+    
+    }
+
+    .menubox{
+        font-family: "Agrandir Italic";
+        font-weight: normal;
+        font-size: 20px;
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+        transition: background-color .2s ease;
+        border-radius: 4px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .menubox:hover{
+        background-color: #efefef;
+        
+    }
+
+    .menu{
+        width: 24px;
+        height: 18px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        cursor: pointer;
+    }
+
+
+    .line1{
+        height: 2px;
+        width: 20px;
+        background-color: black;
+
+    }
+
+    .line2{
+        height: 2px;
+        width: 12px;
+        background-color: black;
+
+    }
+
+    .line3{
+        height: 2px;
+        width: 16px;
+        background-color: black;
+
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-3px, 3px);
+        transition: .2s ease;
+        width: 20px;
+     }
+
+    .toggle .line2{
+        opacity: 0%;
+        transition: .2s ease;
+
+    }
+
+    .toggle .line3{
+        transform: rotate(45deg) translate( -5px, -5px);
+        transition: .2s ease;
+        width: 20px;
+
+    }
+/* ------------------------------------------------------------Header & Main ------------------------------------------------------------------ */
+
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.headline{
+    width: 100%;
+    height: auto;
+    max-width: 1440px;
+    margin: 80px 20px;
+    
+}
+
+.headline h1 {
+    font-family: "Agrandir Regular";
+    font-weight: normal;
+    font-size: 30px;
+    
+}
+
+main{
+    position: relative;
+    top: 100px;
+
+}
+
+/* ------------------------------------------------------------ Flex containers ------------------------------------------------------------------------ */
+
+.flex-container{
+   
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bg-blue{
+    background-color: #D1EBFD;
+    padding-top: 80px;
+}
+.bg-orange{
+    background-color: #FDEAD1;
+    padding-top: 80px;
+}
+
+.bg-gray{
+    background-color: #EDF0F5;
+    padding-top: 80px;
+}
+
+
+.inner-flex{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0px 20px 0px 20px;
+      
+}
+
+
+.about{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: auto;
+    max-width: 1440px;
+
+}
+
+.about img{
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+    
+}
+
+.about p{
+    height: auto;
+    margin-bottom: 40px;
+    
+}
+
+
+
+.full-bleed-flex{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 40px;
+      
+}
+
+.full-bleed-flex img{
+ width: 100%;
+ height: auto;
+}
+
+
+.inner-flex img {
+    width: 100%;
+    
+    
+}
+
+
+.inner-flex h2 {
+    width: 100%;
+    font-family: "Agrandir Narrow";
+    font-size: 40px;
+    font-weight: normal;
+    
+}
+
+
+
+.inner-flex h4{
+    width: 100%;
+    font-family: "Agrandir Narrow";
+    font-size: 24px;
+    padding:40px 0px 10px 0px;
+    
+
+}
+
+
+.inner-flex p{
+    font-family: "Agrandir Regular";
+    font-size: 18px;
+    font-weight: normal;
+    width: 100%;
+
+}
+
+figure{
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+}
+
+figcaption{
+    padding-top: 10px;
+    font-family: "Agrandir Narrow";
+    font-size: 16px;
+}
+
+.inner-flex ul{
+    
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+    padding-left: 20px;
+    
+}
+
+
+.inner-flex li{
+    padding-top: 10px;
+    font-family: "Agrandir Regular";
+    font-size: 18px;
+    font-weight: normal;
+
+}
+
+.allwork{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-width: 1440px;
+    height: auto !important;
+    list-style: none;
+    padding: 80px 0px;
+    margin: 0;
+}
+
+.allwork li{
+    width: 100%;
+    padding: 20px 0px;
+    border-bottom: black 1px solid;
+    position: relative;
+}
+
+.allwork li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+.allwork li :hover{
+    font-family: "Agrandir Italic";
+    
+    transform: translateX(50px);
+}
+.allwork li a:active{
+    font-family: "Agrandir Italic";
+    
+}
+
+
+
+.heading{
+    padding-top: 100px;
+}
+
+.paragraph{
+    
+    max-width: 650px;
+    line-height: 1.5;
+    margin: 20px 20px 100px 20px;
+}
+
+
+.flex-container q{
+    background-color: blue;
+}
+
+
+.quote {
+    max-width: 800px;
+    line-height: 1.8;
+    font-family: "Agrandir Italic";
+    font-weight: normal;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 60px 20px;
+    
+    
+    
+
+}
+
+
+.project-info{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    
+}
+
+
+ .row{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+
+}
+
+.row h6{
+    font-family: "Agrandir Italic";
+    font-size: 20px;
+    font-weight: normal;
+    
+}
+
+
+
+
+
+.past{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;   
+    align-items: center;;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 20px;
+    
+
+}
+
+.stagger{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;   
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 40px 20px;
+}
+
+
+.rectangle{
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 800px;
+
+}
+
+
+
+ .box h6{
+    width: 100%;
+    font-family: "Agrandir Narrow";
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+.box p {
+    font-family: "Agrandir Regular";
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px;
+    color: #464852;
+    
+
+}
+
+.box {
+    margin-top: 40px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    overflow: hidden;
+    
+    
+}
+
+
+.box img{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.box img:hover{
+    transform: scale(1.05, 1.05);
+
+}
+
+
+.scroll-flex{
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25%;
+    margin: 80px 0px;
+    padding-right: 40px;
+
+}
+.scroll-flex::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
+.scroll-box{
+    height: fit-content;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    flex-shrink: 0;
+    flex-grow: .5;
+    scroll-snap-align: start;
+    display: flex;  
+
+}
+
+.landscape{
+    width: 385px;
+    max-width: 790px;
+
+}
+
+.portrait{
+    width: 300px;
+    max-width: 600px;
+}
+
+
+
+
+
+
+.scroll-box img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------MAIN BUTTON STYLES ----------------------------------------------------------------*/
+
+
+.button-flex{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 0px 60px 0px;
+
+    
+}
+
+button{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background-color: white;
+    font-family: "Agrandir Narrow";
+    font-size: 20px;
+    font-weight: normal;
+    border: black solid 1.5px;
+    border-radius: 30px;
+    transition: all .2s ease;
+    
+    cursor: pointer;
+}
+
+
+
+button:hover{
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 15%);
+    font-family: "Agrandir Narrow";
+}
+
+button:hover .icon-arrow-right{
+    transform: translateX( 4px);
+    transform: rotate(-45deg);
+}
+
+button:active{
+    background-color: black;
+    color: white;
+}
+
+button:active .arrow-body{
+    background-color: white;
+}
+
+button:active .arrow-head1{
+    background-color: white;
+}
+
+button:active .arrow-head2{
+    background-color: white;
+}
+
+
+.icon-arrow-right{
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    transition: all .2s ease;
+
+}
+
+.arrow-body{
+    width: 17px;
+    height: 2px;
+    position: relative;
+    top: 10px;
+    background-color: black;
+    
+}
+
+.arrow-head1{
+    position: relative;
+    right: -11px;
+    top: 5px;
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(45deg);
+    
+}
+.arrow-head2{
+    position: relative;
+    right: -11px;
+    top: 9px;
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(-45deg);
+}
+
+
+/* ----------------------------------------------------------------Media queries ----------------------------------------------------------------*/
+
+
+
+
+
+@media screen and (min-width: 720px) {
+
+    .headline h1 {
+        font-size: 40px;
+        
+    }
+    .section-header{
+
+        margin: 60px 20px;
+    }
+
+    .inner-flex h2 {
+        
+        font-size: 40px;
+    
+    }
+
+
+    .project-info{
+        height: 160px;
+    }
+
+ 
+
+
+    .row{
+        width: 50%;
+    }
+
+    .past {
+        justify-content: space-around;
+        align-content: space-between;
+        height: 2000px;
+    }
+
+    .box {
+        width: 45%;
+        justify-content: flex-start;
+        height: auto;
+        
+    
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+
+    
+
+    .headline{
+  
+        margin: 200px 20px;
+        
+    }
+
+    .headline h1 {
+        font-size: 60px;
+        
+    }
+
+ 
+    .about p{
+        height: 400px;
+        width: 50%;
+        border: 1px solid red;
+    }
+
+    .about{
+        height: 1200px;
+        justify-content: center;
+        align-content: space-between;
+
+    }
+    
+
+    .inner-flex h2{
+        
+        font-size: 70px;
+       
+    
+    }
+
+    .project-info{
+        height: 100px;
+        flex-flow: row nowrap;
+    }
+
+   .row{
+       width: 100%;
+   }
+
+ 
+   .inner-flex p{
+    font-family: "Agrandir Regular";
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 10px;
+    
+    }
+
+
+
+   
+
+    .inner-flex ul{
+        height: 250px;        
+        padding: 20px 20px 20px 20px;
+       
+    }   
+
+    .inner-flex ul li{
+        width: 60%;
+
+    }
+
+
+
+    .past{
+        justify-content: space-around;
+        align-content: space-between;
+        height: 2600px;
+
+    }
+    .stagger{
+        max-width: 100%;
+        justify-content: flex-start;
+        align-items: flex-end;
+        align-content: space-between;
+        height: auto;
+        max-height: 1000px;
+        margin: 80px 80px;
+    }
+
+    .rectangle{
+        width: 48%;
+        
+    }
+
+    .left{
+        margin-top: 0px;
+
+    }
+
+    .right{
+        margin-top: 200px;
+    }
+
+
+
+
+    .quote {
+    
+        font-size: 50px;  
+    
+    }
+
+ .scroll-flex{
+     justify-content: center;
+ }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
