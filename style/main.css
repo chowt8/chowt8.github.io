@@ -315,6 +315,7 @@ main{
     font-family: "Agrandir Narrow";
     font-size: 40px;
     font-weight: normal;
+    margin-bottom: 40px;
     
 }
 
@@ -792,6 +793,7 @@ button:active .arrow-head2{
     .inner-flex h2{
         
         font-size: 70px;
+        margin-bottom: 100px;
        
     
     }
