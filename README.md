@@ -1,3 +1,3 @@
 # portfolio
-website of professional design work
-Yeah, this is my portfolio I guess.
+This is my website of professional design work that I coded from scratch.
+
