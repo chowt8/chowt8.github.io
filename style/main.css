@@ -316,6 +316,7 @@ main{
 .inner-flex h4{
     width: 100%;
     font-family: "Agrandir Narrow";
+    font-weight: normal;
     font-size: 24px;
     padding:40px 0px 10px 0px;
     
