@@ -213,7 +213,6 @@ header{
 
 .headline h1 {
     font-family: "Agrandir Regular";
-    font-weight: normal;
     font-size: 30px;
     
 }
@@ -314,7 +313,6 @@ main{
     width: 100%;
     font-family: "Agrandir Narrow";
     font-size: 40px;
-    font-weight: normal;
     margin-bottom: 40px;
     
 }
