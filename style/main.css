@@ -10,14 +10,14 @@ body{
 
 
 img {
-    animation: fade 2s; 
+    animation: fade 3s; 
 }
 
 
 @keyframes fade {
 
     from{ opacity: 0 }
-    to { opacity: 1 }
+    to{ opacity: 1 }
 }
     
 
@@ -279,14 +279,15 @@ main{
 
 .about img{
     height: auto;
-    max-width: 600px;
+    max-width: 400px;
     width: 100%;
     
 }
 
 .about p{
     height: auto;
-    margin-bottom: 40px;
+    max-width: 1000px;
+    margin-bottom: 20px;
     
 }
 
@@ -787,18 +788,22 @@ button:active .arrow-head2{
         
     }
 
- 
-    .about p{
-        height: 400px;
-        width: 50%;
-    }
-
     .about{
-        height: 1200px;
+        height: 600px;
         justify-content: center;
         align-content: space-between;
+        
 
     }
+
+ 
+    .about p{
+        height: auto ;
+        width: 75%;
+        
+    }
+
+    
     
 
     .inner-flex h2{
