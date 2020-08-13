@@ -8,18 +8,40 @@ body{
     background-color: #fafafa;
 }
 
-
 img {
     animation: fade 3s; 
 }
-
 
 @keyframes fade {
 
     from{ opacity: 0 }
     to{ opacity: 1 }
 }
+
+.inner-flex.work-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: auto;
+    max-height: 1200px;
+    flex-shrink: 0;
+    padding-bottom: 80px;
     
+}
+
+.work-box{
+    display: flex;
+    border: 1px solid white;
+    width: 100%;
+    min-width: 320px;
+    max-width: 720px;
+    height: auto;
+    min-height: 200px;
+    padding-top: 60px;
+    margin: 20px 20px 80px 20px;
+
+}
 
 
 @font-face {
@@ -251,6 +273,11 @@ main{
 
 .bg-gray{
     background-color: #EDF0F5;
+    padding-top: 80px;
+}
+
+.bg-black{
+    background-color: #000000;
     padding-top: 80px;
 }
 
