@@ -373,6 +373,7 @@ main{
     align-content: center;
     align-items: flex-start;
     height: auto;
+    width: 100%;
     margin: 0px;
     padding: 0px 0px 80px 0px;
 }
@@ -925,7 +926,7 @@ button:active .arrow-head2{
 
     .work-box{
         width: 48%;
-        padding: 0px: 40px;
+        padding: 0px 40px;
         margin: 0px 0px 60px 0px;
     }
 
