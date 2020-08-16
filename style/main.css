@@ -409,7 +409,7 @@ main{
 
 .work-box h1 {
     font-family: "Agrandir Regular";
-    font-size: 50px;
+    font-size: 60px;
     font-weight: normal;
     width: 100%;
     height: auto;
@@ -824,11 +824,21 @@ button:active .arrow-head2{
     }
 
 
+    .work-row{
+        padding: 0px 40px;
+    }
+
+
     .work-box{
-        padding: 60px 40px 0px 40px;
+        padding: 100px 60px 0px 60px;
         margin: 0px 0px 80px 0px;
         border-bottom: 0px ;
     }
+
+    .work-box h1 {
+        font-size: 80px;
+    }
+    
 
     .row{
         width: 50%;
@@ -921,31 +931,27 @@ button:active .arrow-head2{
     align-items: flex-start;
     height: auto;
     max-height: 2400px;
+    padding: 0px 40px;
 
 }
 
     .work-box{
         width: 48%;
-        padding: 0px 40px;
+        padding: 60px 60px 0px 60px;
         margin: 0px 0px 60px 0px;
     }
 
     .work-box h1 {
-        font-size: 125px;
+        font-size: 100px;
         font-weight: normal;
         text-align: left;
-        width: 100%;
-        height: 200px;
-        z-index: 10;
-        margin: 0px;
-        border: red solid 1px;
+        height: 180px;
+        z-index: 0;
+        margin: 0px 0px 20px 0px;
+        
         
     }
 
-    .featured img:hover .work-box h1{
-        opacity: 0;
-        
-      }
    
 
     .inner-flex ul{
@@ -1005,5 +1011,24 @@ button:active .arrow-head2{
  }
 
 
+}
+
+@media screen and (min-width: 1440px){
+  
+    .inner-flex.work-row{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-between;
+        align-items: flex-start;
+        height: auto;
+        max-width: 1600px;
+        max-height: 2400px;
+        padding: 0px 40px;
+    
+    }
+
+    .work-box{
+        max-width: 780px;
+    }
 }
 
