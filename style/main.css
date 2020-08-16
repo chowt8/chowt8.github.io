@@ -16,8 +16,6 @@ img {
 }
 
 
-
-
 @font-face {
     font-family: "Agrandir Narrow";
     src: url(./fonts/Agrandir-Narrow.otf);
@@ -43,13 +41,12 @@ img {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 100px;
+        height: 63px;
         background-color: white;
         border-bottom: 1px solid black;
         justify-content: center;
         z-index: 12;
         position: fixed;
-
 
     }
 
@@ -99,6 +96,13 @@ img {
         
         
     }
+
+
+    
+
+
+
+
 
     .nav-active{
         transform: translateY(760px);
@@ -234,12 +238,55 @@ main{
 /* ------------------------------------------------------------ Flex containers ------------------------------------------------------------------------ */
 
 .flex-container{
-   
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
 
+}
+
+
+
+.flex-container.about-project{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    background-color: #Ededed;
+    border-top: black solid 1px;
+    z-index: 11;
+    transition: height .5s ease ;
+}
+
+.flex-container.about-project.project-open{ 
+    overflow-y: scroll;   
+    height: 500px;
+    padding-bottom:200px;
+}
+
+
+.show-hide-btn{
+    margin: 15px 0px 40px 0px;
+    font-family: "Agrandir italic";
+    padding: 6px 20px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s ease;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10;
+    
+}
+
+.show-hide-btn:hover{
+    background-color: rgba(0, 0, 0, 15%);
+    
 }
 
 .bg-blue{
@@ -324,6 +371,7 @@ main{
 
 .inner-flex h1 {
     width: 100%;
+    height: 200px;
     font-family: "Agrandir Grand Heavy";
     font-weight: normal;
     text-align: center;
@@ -489,75 +537,46 @@ figcaption{
     
 }
 
-
-
 .heading{
     padding-top: 100px;
 }
 
-.paragraph{
+.inner-flex.paragraph{
     
     max-width: 650px;
     line-height: 1.5;
-    margin: 20px 20px 100px 20px;
-}
-
-
-.flex-container q{
-    background-color: blue;
-}
-
-
-.quote {
-    max-width: 800px;
-    line-height: 1.8;
-    font-family: "Agrandir Italic";
-    font-weight: normal;
-    font-size: 30px;
-    font-weight: normal;
-    margin: 60px 20px;
+    padding: 20px;
     
-    
-    
-
 }
 
 
 .inner-flex .project-info{
     width: 100%;
-    height: 320px;
+    max-width: 650px;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    
+    flex-flow: row wrap;
+    padding: 20px;
+    border-bottom: 1px solid black;
 }
 
-
  .row{
-    width: 100%;
+    width: 50%;
     height: 80px;
     display: flex;
     justify-content: flex-start;
     flex-flow: column wrap;
-
 }
 
 .row h6{
     font-family: "Agrandir Italic";
     font-size: 16px;
     font-weight: normal;
-    
 }
 
 .row p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bolder;
 }
-
-
-
 
 
 .past{
@@ -810,8 +829,6 @@ button:active .arrow-head2{
     }
 
 
-
-
     .section-header{
 
         margin: 60px 20px;
@@ -823,10 +840,6 @@ button:active .arrow-head2{
     
     }
 
-
-    .inner-flex .project-info{
-        height: 160px;
-    }
 
     #transition{
         background-color: white !important;
@@ -849,9 +862,6 @@ button:active .arrow-head2{
     }
     
 
-    .row{
-        width: 50%;
-    }
 
     .past {
         justify-content: space-around;
@@ -920,18 +930,9 @@ button:active .arrow-head2{
     }
 
 
-    .inner-flex .project-info{
-        height: 100px;
-        flex-flow: row nowrap;
-    }
 
-   .row{
-       width: 100%;
-   }
 
-   .row p {
-       font-size: 30px;
-   }
+
 
    .inner-flex.work-row{
     display: flex;
@@ -939,7 +940,7 @@ button:active .arrow-head2{
     align-content: space-between;
     align-items: flex-start;
     height: auto;
-    max-height: 3000px;
+    max-height: 3200px;
     padding: 0px 40px;
 
 }
@@ -961,17 +962,35 @@ button:active .arrow-head2{
         
     }
 
+    .inner-flex.paragraph{
+    
+        max-width: 650px;
+        line-height: 1.5;
+        padding: 0px;
+        
+    }
+
+    .flex-container.about-project.project-open{ 
+        overflow-y: scroll;   
+        height: 720px;
+    }
+
    
 
     .inner-flex ul{
-        height: 250px;        
+        height: 300px;        
         padding: 20px 20px 20px 20px;
        
     }   
 
     .inner-flex ul li{
-        width: 60%;
+        margin: 0px 20px 10px 0px;
+        width: 45%;
 
+    }
+
+    .inner-flex .project-info{
+        padding: 0px;
     }
 
 
@@ -1030,7 +1049,7 @@ button:active .arrow-head2{
         align-content: space-between;
         align-items: flex-start;
         height: auto;
-        max-width: 1600px;
+        max-height: 2880px;
         padding: 0px 40px;
     
     }
