@@ -478,7 +478,7 @@ a.work-box{
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-end;
-    background-color: #efefef;
+    background-color: #EDF0F5;
     width: 100%;
     max-width: 720px;
     height: auto;
@@ -903,6 +903,12 @@ button:active .arrow-head2{
         border-bottom: 0px ;
     }
 
+    a.work-box{
+        padding: 100px 60px 0px 60px;
+        margin: 0px 0px 80px 0px;
+        border-bottom: 0px ;
+    }
+
     .work-box h1 {
         font-size: 80px;
     }
@@ -987,6 +993,11 @@ button:active .arrow-head2{
 }
 
     .work-box{
+        width: 48%;
+        padding: 60px 60px 0px 60px;
+        margin: 0px 0px 60px 0px;
+    }
+    a.work-box{
         width: 48%;
         padding: 60px 60px 0px 60px;
         margin: 0px 0px 60px 0px;
