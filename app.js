@@ -47,11 +47,8 @@ closeInfo.addEventListener('click', () => {
 });
 
 
-
-
 }
 
 navSlide();
-
 showInfo();
 closeInfo();
