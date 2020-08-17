@@ -26,20 +26,32 @@ const navSlide = () => {
 
 
 const showInfo = () => {
-const showHide = document.querySelector('.show-hide-btn')
+const showHide = document.querySelector('.toggle-btn');
 const projectInfo = document.querySelector('.about-project');
+const closeInfo = document.querySelector('.hide-btn');
 
 showHide.addEventListener('click', () => {
 
         projectInfo.classList.toggle('project-open');
-
+       
 
         
 
 });
+
+closeInfo.addEventListener('click', () => {
+
+    projectInfo.classList.remove('project-open');
+   
+
+});
+
+
+
 
 }
 
 navSlide();
 
 showInfo();
+closeInfo();

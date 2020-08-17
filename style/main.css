@@ -241,7 +241,10 @@ main{
     width: 100%;
     height: auto;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
 
 }
 
@@ -252,24 +255,25 @@ main{
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    height: 70px;
+    height: 0px;
     position: fixed;
     bottom: 0;
     background-color: #Ededed;
-    border-top: black solid 1px;
+    border-top: black solid 0px;
     z-index: 11;
     transition: height .5s ease ;
 }
 
 .flex-container.about-project.project-open{ 
+    border-top: black solid 1px;
     overflow-y: scroll;   
     height: 500px;
     padding-bottom:200px;
 }
 
 
-.show-hide-btn{
-    margin: 15px 0px 40px 0px;
+.toggle-btn, .hide-btn{
+    margin: 20px 0px 20px 0px;
     font-family: "Agrandir italic";
     padding: 6px 20px;
     text-align: center;
@@ -284,7 +288,14 @@ main{
     
 }
 
-.show-hide-btn:hover{
+
+
+.toggle-btn:hover{
+    background-color: rgba(0, 0, 0, 15%);
+    
+}
+
+.hide-btn:hover{
     background-color: rgba(0, 0, 0, 15%);
     
 }
@@ -538,11 +549,10 @@ figcaption{
 }
 
 .heading{
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .inner-flex.paragraph{
-    
     max-width: 650px;
     line-height: 1.5;
     padding: 20px;
@@ -555,6 +565,7 @@ figcaption{
     max-width: 650px;
     display: flex;
     flex-flow: row wrap;
+    margin: 60px 0px 0px 0px;
     padding: 20px;
     border-bottom: 1px solid black;
 }
