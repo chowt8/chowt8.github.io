@@ -47,6 +47,8 @@ img {
         justify-content: center;
         z-index: 12;
         position: fixed;
+        user-zoom: none;
+
 
     }
 
@@ -96,13 +98,6 @@ img {
         
         
     }
-
-
-    
-
-
-
-
 
     .nav-active{
         transform: translateY(760px);
@@ -258,7 +253,7 @@ main{
     height: 0px;
     position: fixed;
     bottom: 0;
-    background-color: #Ededed;
+    background-color: #ffffff;
     border-top: black solid 0px;
     z-index: 11;
     transition: height .5s ease ;
@@ -271,9 +266,13 @@ main{
     padding-bottom:200px;
 }
 
+.flex-container.about-project.project-open::-webkit-scrollbar {
+    display: none;
+}
 
-.toggle-btn, .hide-btn{
-    margin: 20px 0px 20px 0px;
+
+.toggle-btn {
+    margin: 20px;
     font-family: "Agrandir italic";
     padding: 6px 20px;
     text-align: center;
@@ -285,6 +284,24 @@ main{
     border-radius: 4px;
     cursor: pointer;
     z-index: 10;
+    border: 1px solid black;
+    
+}
+
+ .hide-btn{
+    margin: 20px;
+    font-family: "Agrandir italic";
+    padding: 6px 20px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s ease;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10;
+
     
 }
 
@@ -439,6 +456,13 @@ main{
 }
 
 
+.inner-flex.btn{
+    display: flex;
+    align-items: center;
+    
+
+}
+
 .no-select{
     width: auto;
     height: auto;
@@ -450,27 +474,6 @@ main{
     -ms-user-select: none;
 
 
-}
-
-
-
-
-
-
-
-.work-box{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-    background-color: #EDF0F5;
-    width: 100%;
-    max-width: 720px;
-    height: auto;
-    padding: 80px 20px 0px 20px;
-    overflow: hidden;
-    border-bottom: 1px solid black;
-    margin: 0px 0px 0px 0px;
- 
 }
 
 
@@ -487,6 +490,7 @@ a.work-box{
     margin: 0px 0px 0px 0px;
     text-decoration: none;
     color: black;
+    overflow: hidden;
 
 }
 
@@ -604,8 +608,9 @@ figcaption{
 }
 
  .row{
-    width: 50%;
-    height: 80px;
+    width: 48%;
+    height: auto;
+    padding: 0px 0px 40px 0px;
     display: flex;
     justify-content: flex-start;
     flex-flow: column wrap;
@@ -886,6 +891,18 @@ button:active .arrow-head2{
     
     }
 
+    .inner-flex.btn{
+        display: flex;
+        align-items: flex-start;   
+    
+    }
+
+    .toggle-btn {
+        margin: 20px 40px;
+
+    }
+
+
 
     #transition{
         background-color: white !important;
@@ -897,11 +914,6 @@ button:active .arrow-head2{
     }
 
 
-    .work-box{
-        padding: 100px 60px 0px 60px;
-        margin: 0px 0px 80px 0px;
-        border-bottom: 0px ;
-    }
 
     a.work-box{
         padding: 100px 60px 0px 60px;
@@ -992,11 +1004,6 @@ button:active .arrow-head2{
 
 }
 
-    .work-box{
-        width: 48%;
-        padding: 60px 60px 0px 60px;
-        margin: 0px 0px 60px 0px;
-    }
     a.work-box{
         width: 48%;
         padding: 60px 60px 0px 60px;
@@ -1007,11 +1014,16 @@ button:active .arrow-head2{
         font-size: 100px;
         font-weight: normal;
         text-align: left;
-        height: 180px;
-        z-index: 0;
+        height: auto;
+        z-index: 10;
         margin: 0px 0px 20px 0px;
         
         
+    }
+
+    .hide-btn{
+        position: fixed;
+        transform: translateY(40px);
     }
 
     .inner-flex.paragraph{
@@ -1066,9 +1078,13 @@ button:active .arrow-head2{
         align-content: space-between;
         align-items: flex-start;
         height: auto;
-        max-height: 2880px;
-        padding: 0px 40px;
+        padding: 0px 0px;
     
+    }
+
+    .toggle-btn {
+        margin: 20px 0px;
+
     }
 
     .work-box{
