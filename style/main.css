@@ -453,6 +453,11 @@ main{
 }
 
 
+
+
+
+
+
 .work-box{
     display: flex;
     flex-flow: column wrap;
@@ -466,6 +471,23 @@ main{
     border-bottom: 1px solid black;
     margin: 0px 0px 0px 0px;
  
+}
+
+
+a.work-box{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    background-color: #efefef;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    padding: 80px 20px 0px 20px;
+    border-bottom: 1px solid black;
+    margin: 0px 0px 0px 0px;
+    text-decoration: none;
+    color: black;
+
 }
 
 .work-box h1 {
