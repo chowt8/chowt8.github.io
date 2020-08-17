@@ -258,7 +258,7 @@ main{
     height: 0px;
     position: fixed;
     bottom: 0;
-    background-color: #ffffff;
+    background-color: #Ededed;
     border-top: black solid 0px;
     z-index: 11;
     transition: height .5s ease ;
@@ -388,7 +388,6 @@ main{
     font-size: 40px;
     margin: 40px 20px 60px 20px;
     
-    
 }
 
 
@@ -440,6 +439,17 @@ main{
 }
 
 
+.no-select{
+    user-drag: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+
+}
+
 
 
 
@@ -458,10 +468,18 @@ main{
  
 }
 
-.featured{
-    display: flex;
+.work-box h1 {
+    font-family: "Agrandir Regular";
+    font-size: 60px;
+    font-weight: normal;
+    width: auto;
+        
 }
 
+.featured{
+    display: flex;
+   
+}
 
 .featured img{
     cursor: pointer;
@@ -473,14 +491,6 @@ main{
   
 }
 
-.work-box h1 {
-    font-family: "Agrandir Regular";
-    font-size: 60px;
-    font-weight: normal;
-    width: auto;
-    
-    
-}
 
 figure{
     display: flex;
