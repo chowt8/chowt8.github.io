@@ -440,6 +440,8 @@ main{
 
 
 .no-select{
+    width: auto;
+    height: auto;
     user-drag: none;
     user-select: none;
     -webkit-user-drag: none;
@@ -449,8 +451,6 @@ main{
 
 
 }
-
-
 
 
 .work-box{
