@@ -258,7 +258,7 @@ main{
     height: 0px;
     position: fixed;
     bottom: 0;
-    background-color: #Ededed;
+    background-color: #ffffff;
     border-top: black solid 0px;
     z-index: 11;
     transition: height .5s ease ;
@@ -387,7 +387,7 @@ main{
     text-align: center;
     font-size: 40px;
     margin: 40px 20px 60px 20px;
-    border: 1px solid black;
+    
     
 }
 
@@ -400,7 +400,7 @@ main{
     font-weight: normal;
     font-size: 40px;
     margin: 40px 20px 40px 20px;
-    border: 1px solid black;
+    
     
 }
 
@@ -849,6 +849,8 @@ button:active .arrow-head2{
     .inner-flex h2 {
         
         font-size: 40px;
+        margin: 40px;
+
     
     }
 
@@ -923,12 +925,10 @@ button:active .arrow-head2{
     }
 
     
-  
-    
 
     .inner-flex h2{
         
-        font-size: 70px;
+        font-size: 80px;
         margin: 60px 40px 40px 40px;
     }
 
@@ -941,10 +941,6 @@ button:active .arrow-head2{
     padding-top: 10px;
     
     }
-
-
-
-
 
 
    .inner-flex.work-row{
@@ -1003,9 +999,8 @@ button:active .arrow-head2{
     }
 
     .inner-flex .project-info{
-        padding: 0px;
+        padding: 40px 0px;
     }
-
 
 
     .past{
@@ -1015,42 +1010,7 @@ button:active .arrow-head2{
         
 
     }
-    .stagger{
-        max-width: 100%;
-        justify-content: flex-start;
-        align-items: flex-end;
-        align-content: space-between;
-        height: auto;
-        max-height: 1000px;
-        margin: 80px 80px;
-    }
-
-    .rectangle{
-        width: 48%;
-        
-    }
-
-    .left{
-        margin-top: 0px;
-
-    }
-
-    .right{
-        margin-top: 200px;
-    }
-
-
-
-
-    .quote {
-    
-        font-size: 50px;  
-    
-    }
-
- .scroll-flex{
-     justify-content: center;
- }
+  
 
 
 }
@@ -1071,5 +1031,15 @@ button:active .arrow-head2{
     .work-box{
         max-width: 780px;
     }
+
+    .inner-flex h2{
+        
+        font-size: 80px;
+        margin: 60px 0px 40px 0px;
+    }
+
+
 }
+
+
 
