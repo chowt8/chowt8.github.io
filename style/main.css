@@ -403,7 +403,7 @@ main{
     font-weight: normal;
     text-align: center;
     font-size: 40px;
-    margin: 40px 20px 60px 20px;
+    margin: 0px 20px 40px 20px;
     
 }
 
@@ -974,7 +974,10 @@ button:active .arrow-head2{
         width: 75%;  
     }
 
-    
+ 
+    .inner-flex h1 {
+        margin: 0px 20px 80px 20px;
+    }
 
     .inner-flex h2{
         
