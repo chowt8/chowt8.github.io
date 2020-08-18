@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 img {
     animation: fade 1s; 
 }
@@ -199,7 +198,6 @@ img {
 /* ------------------------------------------------------------Header & Main ------------------------------------------------------------------ */
 
 
-
 header{
     width: 100%;
     display: flex;
@@ -242,7 +240,6 @@ main{
     overflow: hidden;
 
 }
-
 
 
 .flex-container.about-project{
@@ -1017,11 +1014,8 @@ button:active .arrow-head2{
         font-size: 100px;
         font-weight: normal;
         text-align: left;
-        height: auto;
-        z-index: 10;
-        margin: 0px 0px 20px 0px;
-        
-        
+        height: 180px;
+           
     }
 
     .hide-btn{
