@@ -42,8 +42,8 @@ img {
         align-items: center;
         width: 100%;
         height: 63px;
-        background-color: white;
-        border-bottom: 1px solid black;
+        /*background-color: white; 
+        border-bottom: 1px solid black; */
         justify-content: center;
         z-index: 12;
         position: fixed;
@@ -412,7 +412,7 @@ main{
 
 .inner-flex h2 {
     width: auto;
-    font-family: "Agrandir Narrow";
+    font-family: "Agrandir Regular";
     font-weight: normal;
     font-size: 40px;
     margin: 40px 20px 40px 20px;
