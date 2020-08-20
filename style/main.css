@@ -493,7 +493,7 @@ a.work-box{
 
 .work-box h1 {
     font-family: "Agrandir Regular";
-    font-size: 60px;
+    font-size: 40px;
     font-weight: normal;
     width: auto;
         
@@ -919,7 +919,7 @@ button:active .arrow-head2{
     }
 
     .work-box h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
     
 
@@ -962,7 +962,26 @@ button:active .arrow-head2{
         justify-content: center;
         align-content: space-between;
         
+    }
 
+
+    .bg-blue{
+        background-color: #D1EBFD;
+        padding-top: 120px;
+    }
+    .bg-orange{
+        background-color: #FDEAD1;
+        padding-top: 120px;
+    }
+    
+    .bg-gray{
+        background-color: #EDF0F5;
+        padding-top: 120px;
+    }
+    
+    .bg-black{
+        background-color: #000000;
+        padding-top: 120px;
     }
 
  
@@ -1006,15 +1025,16 @@ button:active .arrow-head2{
 
     a.work-box{
         width: 48%;
-        padding: 60px 60px 0px 60px;
+        padding: 40px 40px 0px 40px;
         margin: 0px 0px 60px 0px;
     }
 
     .work-box h1 {
-        font-size: 100px;
+        font-size: 80px;
         font-weight: normal;
         text-align: left;
-        height: 180px;
+        height: auto;
+        margin: 0px 0px 60px 0px;
            
     }
 
