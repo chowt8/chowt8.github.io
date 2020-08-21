@@ -412,6 +412,7 @@ main{
     font-family: "Agrandir Regular";
     font-weight: normal;
     font-size: 40px;
+    text-align: center;
     margin: 40px 20px 40px 20px;
     
     
@@ -881,7 +882,9 @@ button:active .arrow-head2{
     }
 
     .inner-flex h2 {
-        
+        width: 100%;
+
+        text-align: left;
         font-size: 40px;
         margin: 40px;
 
@@ -1030,8 +1033,9 @@ button:active .arrow-head2{
     }
 
     .work-box h1 {
-        font-size: 100px;
+        font-size: 90px;
         font-weight: normal;
+        line-height: 99%;
         text-align: left;
         height: auto;
         margin: 60px 0px 20px 0px;
@@ -1109,8 +1113,6 @@ button:active .arrow-head2{
     }
 
     .inner-flex h2{
-        
-        font-size: 80px;
         margin: 60px 0px 40px 0px;
     }
 
