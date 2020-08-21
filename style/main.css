@@ -411,11 +411,10 @@ main{
     width: auto;
     font-family: "Agrandir Regular";
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     margin: 40px 20px 40px 20px;
-    
-    
+
 }
 
 
@@ -427,7 +426,6 @@ main{
     font-size: 24px;
     padding:40px 0px 10px 0px;
     
-
 }
 
 
@@ -960,7 +958,7 @@ button:active .arrow-head2{
 
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
 
 
     
@@ -999,6 +997,8 @@ button:active .arrow-head2{
         
         font-size: 80px;
         margin: 60px 40px 40px 40px;
+        width: auto;
+        
     }
 
 
@@ -1108,7 +1108,7 @@ button:active .arrow-head2{
 
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1600px){
   
     .inner-flex.work-row{
         display: flex;
