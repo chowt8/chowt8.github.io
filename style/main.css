@@ -1028,7 +1028,7 @@ button:active .arrow-head2{
 
     a.work-box{
         width: 48%;
-        padding: 40px 40px 0px 40px;
+        padding: 0px 40px 0px 40px;
         margin: 0px 0px 60px 0px;
     }
 
@@ -1038,7 +1038,7 @@ button:active .arrow-head2{
         line-height: 99%;
         text-align: left;
         height: auto;
-        margin: 60px 0px 20px 0px;
+        margin: 80px 0px 60px 0px;
            
     }
 
