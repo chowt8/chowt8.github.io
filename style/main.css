@@ -500,6 +500,23 @@ a.work-box{
         
 }
 
+.rotate {
+    animation: rotation 20s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+
+
+
 .featured{
     display: flex;
    
@@ -883,9 +900,8 @@ button:active .arrow-head2{
 
     .inner-flex h2 {
         width: 100%;
-
+        font-size: 60px;
         text-align: left;
-        font-size: 40px;
         margin: 40px;
 
     
