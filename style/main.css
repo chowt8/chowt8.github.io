@@ -253,14 +253,14 @@ main{
     background-color: #ffffff;
     border-top: black solid 0px;
     z-index: 11;
-    transition: height .5s ease ;
+    transition: all .5s ease;
 }
 
 .flex-container.about-project.project-open{ 
     border-top: black solid 1px;
     overflow-y: scroll;   
     height: 500px;
-    padding-bottom:200px;
+    padding-bottom: 200px;
 }
 
 .flex-container.about-project.project-open::-webkit-scrollbar {
