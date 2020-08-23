@@ -609,6 +609,11 @@ figcaption{
     
 }
 
+.inner-flex.paragraph p{
+    margin-bottom: 20px;
+    
+}
+
 
 .inner-flex .project-info{
     width: 100%;
@@ -897,7 +902,7 @@ button:active .arrow-head2{
     }
 
     .inner-flex h2 {
-        width: 100%;
+        width: auto;
         font-size: 60px;
         text-align: left;
         margin: 40px;
