@@ -614,6 +614,17 @@ figcaption{
     
 }
 
+.inner-flex.paragraph h5{
+    padding-left: 40px;
+    margin: 20px 0px 40px 0px;
+    font-family: "Agrandir Grand Heavy";
+    text-transform: uppercase;
+    font-size: 20px;
+    border-left: 2px solid black;
+
+    
+}
+
 
 .inner-flex .project-info{
     width: 100%;
