@@ -626,6 +626,8 @@ figcaption{
 }
 
 
+
+
 .inner-flex .project-info{
     width: 100%;
     max-width: 650px;
@@ -1085,6 +1087,10 @@ button:active .arrow-head2{
         margin: 0px 20px 10px 0px;
         width: 45%;
 
+    }
+    
+    ul.credits li{
+        width: 100%;
     }
 
     .inner-flex .project-info{
