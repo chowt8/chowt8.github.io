@@ -270,7 +270,8 @@ main{
 
 .toggle-btn {
     margin: 20px;
-    font-family: "Agrandir italic";
+    font-family: "Agrandir Narrow";
+    font-weight: bold;
     padding: 6px 20px;
     text-align: center;
     font-size: 20px;
@@ -281,7 +282,7 @@ main{
     border-radius: 4px;
     cursor: pointer;
     z-index: 10;
-    border: 1px solid black;
+    border: 1.5px solid black;
     
 }
 
