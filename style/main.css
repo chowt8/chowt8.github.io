@@ -491,12 +491,19 @@ a.work-box{
 
 }
 
+
+
 .work-box h1 {
     font-family: "Agrandir Regular";
     font-size: 40px;
     font-weight: normal;
     width: auto;
         
+}
+
+.work-box img{
+    height: 100%;
+    
 }
 
 .rotate {
