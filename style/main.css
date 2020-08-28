@@ -445,7 +445,7 @@ main{
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: auto;
     width: 100%;
     margin: 0px;
