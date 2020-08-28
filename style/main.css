@@ -358,6 +358,10 @@ main{
     
 }
 
+.about-project > * { 
+    flex-shrink: 0; 
+}
+
 
 
 .toggle-btn:hover{
