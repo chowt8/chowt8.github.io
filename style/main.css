@@ -267,6 +267,10 @@ main{
     display: none;
 }
 
+.about-project > * { 
+    flex-shrink: 0; 
+}
+
 
 .toggle-btn {
     margin: 20px;
