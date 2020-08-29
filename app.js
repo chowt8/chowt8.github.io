@@ -2,7 +2,7 @@ const navSlide = () => {
     const menuBox = document.querySelector('.menubox')
     const menu = document.querySelector('.menu');
     //main div container for the menu icons
-    const navList = document.querySelector('.nav-list');
+    const navList = document.querySelector('nav');
     //ul class
    
 

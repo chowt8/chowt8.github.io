@@ -22,6 +22,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
+    
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -29,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1.3;
+	line-height: 1.2;
 }
 ol, ul {
 	list-style: none;
@@ -81,98 +83,109 @@ img {
 /* Navigation Styles------------------------------------------------------------------ */
     nav{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
-        height: 63px;
-        background-color: white; 
-        border-bottom: 1px solid black;
+        height: 80px;
         justify-content: center;
         z-index: 12;
+        overflow: hidden;
         position: fixed;
-        user-zoom: none;
+        top: 0;
+        transition: all .5s ease;
 
+    }
 
+    .nav-active{
+        background-color: rgba(255, 255, 255, 100);
+        height: 100vh;
+        
+        
     }
 
     /* container for all navigation items */
-    .nav-container{
-        width: 100%;
-        height: auto;
-        max-width: 1440px;
-        margin: 0px 20px;
-        display: flex;
-        padding: 10px 0px;
-        justify-content: space-between;
-        align-items: baseline;
 
+
+    .nav-container{
+        
+        width: 100%;
+        max-width: 1440px;
+        padding: 0px 20px;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        
     }
 
-    .logo h4 a{
+    .nav-bar{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+
+    .logo {
+        width: auto;
+    }
+
+    .logo a h4{
         font-family: "Agrandir Regular";
+        font-weight: normal;
         font-size: 20px;
         z-index: 11;
-        text-decoration: none;
         color: black;
         cursor: pointer;
         
     }
 
-    /* flex containter for navigation links */
-    .nav-list{
-        position: absolute;
-        font-family: "Agrandir Narrow", sans-serif;
-        font-size: 40px;
-        list-style: none;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-items: center;
-        left: 0;
-        top: -700px;
-        width: 100%;
-        height: 600px;
-        padding: 0 20px;
-        opacity:0%;
-        background-color: white;
-        border-bottom: 1px solid black;
-        transition: transform .5s ease, opacity .2s ease ;
-        
-        
-    }
-
-    .nav-active{
-        transform: translateY(760px);
-        opacity: 100%;
-    }
-
-    .nav-list li{
-        max-width: 1440px; 
-        width: 100%;
-        padding: 20px 0px;
-
-    }
-
-    .nav-list a{
+    a h4{
         text-decoration: none;
         color: black;
     }
 
-    .nav-list a:hover{
-        text-decoration: underline;
-        cursor:pointer;
+    /* flex containter for navigation links */
+    .nav-list{
+        font-family: "Agrandir Narrow", sans-serif;
+        font-weight: normal;
+        font-size: 8vh;
+        list-style: none;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;            
     }
 
-    .nav-list a:active{
-        text-decoration: underline;
-    
+    .nav-list li {
+        margin: 0px 0px 20px 0px;
+        padding: 20px 0px 0px 0px;
     }
+
+    .nav-list li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-list li a:hover{
+        text-decoration: underline;
+    }
+
+    .nav-list li a:active{
+        text-decoration: underline;
+    }
+
 
     .menubox{
         font-family: "Agrandir Italic";
         font-weight: normal;
         font-size: 20px;
-        width: 110px;
+        width: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -184,7 +197,7 @@ img {
     }
 
     .menubox:hover{
-        background-color: #efefef;
+        background-color: rgba(0, 0, 0, 10%);
         
     }
 
@@ -195,6 +208,7 @@ img {
         flex-flow: column nowrap;
         justify-content: space-around;
         align-items: flex-start;
+        padding: 0px 0px 0px 10px;
         cursor: pointer;
     }
 
@@ -265,11 +279,7 @@ header{
     
 }
 
-main{
-    position: relative;
-    top: 62px;
 
-}
 
 /* ------------------------------------------------------------ Flex containers ------------------------------------------------------------------------ */
 
@@ -310,7 +320,7 @@ main{
 .flex-container.about-project.project-open{ 
     border-top: black solid 1px;
     overflow-y: scroll;   
-    height: 500px;
+    height: 35vh;
     padding-bottom: 200px;
 }
 
@@ -324,53 +334,57 @@ main{
 
 
 .toggle-btn {
+    
+    background-color: white;
     margin: 20px;
     font-family: "Agrandir Narrow";
-    font-weight: bold;
-    padding: 6px 20px;
+    padding: 12px 30px;
     text-align: center;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color .2s ease;
+    transition: all .2s ease;
     border-radius: 4px;
     cursor: pointer;
     z-index: 10;
-    border: 1.5px solid black;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 100%);
+    
     
 }
 
  .hide-btn{
     margin: 20px;
     font-family: "Agrandir italic";
-    padding: 6px 20px;
+    padding: 10px 30px;
     text-align: center;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color .2s ease;
+    transition: all .2s ease;
     border-radius: 4px;
     cursor: pointer;
     z-index: 10;
-
     
-}
-
-.about-project > * { 
-    flex-shrink: 0; 
 }
 
 
 
 .toggle-btn:hover{
-    background-color: rgba(0, 0, 0, 15%);
+    transform: scale(1.1);
+    background-color: rgba(235, 235, 235, 100%);
+    
+}
+
+.toggle-btn:active{
+    transform: scale(1.1);
+    background-color: rgba(215, 215, 215, 100%);
     
 }
 
 .hide-btn:hover{
-    background-color: rgba(0, 0, 0, 15%);
+    background-color: rgba(0, 0, 0, 10%);
     
 }
 
@@ -465,8 +479,6 @@ main{
 }
 
 
-
-
 .inner-flex h2 {
     width: auto;
     font-family: "Agrandir Regular";
@@ -478,30 +490,30 @@ main{
 }
 
 
-
-.inner-flex h4{
+.inner-flex h4 {
     width: auto;
-    max-width: 650px;
     font-family: "Agrandir Regular";
     font-weight: normal;
     font-size: 20px;
     text-align: center;
-    margin: 20px 20px 20px 20px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+
+.inner-flex.paragraph h4{
+    font-family: "Agrandir Regular";
+    font-weight: normal;
+    font-size: 20px;
     
 }
 
 
-
-
-.inner-flex p{
+.inner-flex.paragraph p{
     font-family: "Agrandir Regular";
     font-size: 18px;
     font-weight: normal;
-    width: 100%;
-
 }
-
-
 
 
 .inner-flex.work-row{
@@ -520,7 +532,6 @@ main{
     display: flex;
     align-items: center;
     
-
 }
 
 .no-select{
@@ -532,7 +543,6 @@ main{
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-
 
 }
 
@@ -553,7 +563,6 @@ a.work-box{
     overflow: hidden;
 
 }
-
 
 
 .work-box h1 {
@@ -581,7 +590,6 @@ a.work-box{
       transform: rotate(359deg);
     }
   }
-
 
 
 
@@ -614,14 +622,13 @@ figcaption{
     font-size: 16px;
 }
 
-.inner-flex ul{
+.inner-flex.inner-flex.paragraph ul{
     
-    width: 100%;
+    
     max-width: 1440px;
     display: flex;
     flex-flow: column wrap;
     height: auto;
-    padding: 40px 20px ;
     
 }
 
@@ -638,12 +645,14 @@ figcaption{
 
 .heading{
     padding-top: 80px;
+
 }
 
+
 .inner-flex.paragraph{
+    display: flex;
     max-width: 650px;
     line-height: 1.5;
-    padding: 20px;
     
 }
 
@@ -651,6 +660,7 @@ figcaption{
     margin-bottom: 20px;
     
 }
+
 
 .inner-flex.paragraph h5{
     padding-left: 40px;
@@ -660,26 +670,28 @@ figcaption{
     font-size: 20px;
     border-left: 2px solid black;
 
+}
+
+
+
+
+.inner-flex.project-info{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid black;
+
+}
+
+.inner-flex.project-info p{
+    font-family: "Agrandir Regular";
     
 }
 
 
-
-
-.inner-flex .project-info{
-    width: 100%;
-    max-width: 650px;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 60px 0px 0px 0px;
-    padding: 20px;
-    border-bottom: 1px solid black;
-}
-
  .row{
-    width: 48%;
+    width: 100%;
     height: auto;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 20px 0px;
     display: flex;
     justify-content: flex-start;
     flex-flow: column wrap;
@@ -691,7 +703,7 @@ figcaption{
     font-weight: normal;
 }
 
-.row p {
+inner-flex .row p {
     font-size: 20px;
     font-weight: bolder;
 }
@@ -941,6 +953,12 @@ button:active .arrow-head2{
 
 @media screen and (min-width: 720px) {
 
+
+    .nav-container{
+        padding: 0px 40px;
+ 
+    }
+
     .headline h1 {
         font-size: 40px;
            
@@ -1060,8 +1078,6 @@ button:active .arrow-head2{
     font-family: "Agrandir Regular";
     font-size: 20px;
     font-weight: normal;
-    padding-top: 10px;
-    
     }
 
 
@@ -1095,51 +1111,28 @@ button:active .arrow-head2{
 
     .hide-btn{
         position: fixed;
-        transform: translateY(40px);
+        transform: translateY(232px);
     }
 
     .inner-flex.paragraph{
     
         max-width: 650px;
         line-height: 1.5;
-        padding: 0px;
         
     }
 
     .flex-container.about-project.project-open{ 
         overflow-y: scroll;   
-        height: 720px;
+        height: 55vh;
     }
 
    
-
-    .inner-flex ul{
-        height: 300px;        
-        padding: 20px 20px 20px 20px;
-       
-    }   
-
-    .inner-flex ul li{
-        margin: 0px 20px 10px 0px;
-        width: 45%;
-
-    }
-    
-    ul.credits li{
-        width: 100%;
-    }
-
-    .inner-flex .project-info{
-        padding: 40px 0px;
-    }
-
 
     .past{
         justify-content: space-around;
         align-content: space-between;
         height: 2400px;
-        
-
+    
     }
 
 
@@ -1167,7 +1160,12 @@ button:active .arrow-head2{
 }
 
 @media screen and (min-width: 1600px){
-  
+
+
+    .nav-container{
+        padding: 0px 0px;
+ 
+    }
     .inner-flex.work-row{
         display: flex;
         flex-flow: column wrap;
@@ -1178,7 +1176,7 @@ button:active .arrow-head2{
     }
 
     .toggle-btn {
-        margin: 20px 0px;
+        margin: 20px 0px 40px 8px;
 
     }
 
