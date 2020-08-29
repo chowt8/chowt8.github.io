@@ -1091,7 +1091,8 @@ button:active .arrow-head2{
 }
 
     a.work-box{
-        width: 42%;
+        width: 47%;
+        max-width: 700px;
         padding: 0px 40px 0px 40px;
         margin: 0px 0px 60px 0px;
     }
@@ -1099,7 +1100,6 @@ button:active .arrow-head2{
     .work-box h1 {
         font-size: 80px;
         font-weight: normal;
-        line-height: 99%;
         text-align: left;
         height: auto;
         margin: 80px 0px 60px 0px;
@@ -1111,12 +1111,7 @@ button:active .arrow-head2{
         transform: translateY(232px);
     }
 
-    .inner-flex.paragraph{
-    
-        max-width: 650px;
-        line-height: 1.5;
-        
-    }
+
 
     .flex-container.about-project.project-open{ 
         overflow-y: scroll;   
@@ -1177,9 +1172,6 @@ button:active .arrow-head2{
 
     }
 
-    .work-box{
-        max-width: 780px;
-    }
 
     .inner-flex h2{
         margin: 60px 0px 40px 0px;
