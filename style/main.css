@@ -80,6 +80,11 @@ img {
     src: url(./fonts/Agrandir-GrandHeavy.otf);
 }
 
+@font-face {
+    font-family: "Agrandir Wide Black Italic";
+    src: url(./fonts/Agrandir-WideBlackItalic.otf);
+}
+
 /* Navigation Styles------------------------------------------------------------------ */
     nav{
         display: flex;
@@ -467,11 +472,11 @@ header{
 
 .inner-flex h1 {
     width: auto;
-    font-family: "Agrandir Grand Heavy";
+    font-family: "Agrandir Wide Black Italic";
     font-weight: normal;
     text-align: center;
     font-size: 40px;
-    margin: 0px 20px 40px 20px;
+    margin: 80px 20px 40px 20px;
     
 }
 
@@ -564,9 +569,10 @@ a.work-box{
 
 .work-box h1 {
     font-family: "Agrandir Regular";
-    font-size: 40px;
+    font-size: 30px;
     font-weight: normal;
     width: auto;
+    margin: 0px 20px 20px 20px;
         
 }
 
@@ -700,7 +706,7 @@ figcaption{
     font-weight: normal;
 }
 
-inner-flex .row p {
+.inner-flex .row p {
     font-size: 20px;
     font-weight: bolder;
 }
