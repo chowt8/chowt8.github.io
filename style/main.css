@@ -133,26 +133,23 @@ img {
         width: auto;
     }
 
-    .logo a h4{
+    .logo a {
         font-family: "Agrandir Regular";
         font-weight: normal;
         font-size: 20px;
         z-index: 11;
+        text-decoration: none;
         color: black;
         cursor: pointer;
         
     }
 
-    a h4{
-        text-decoration: none;
-        color: black;
-    }
 
     /* flex containter for navigation links */
     .nav-list{
         font-family: "Agrandir Narrow", sans-serif;
         font-weight: normal;
-        font-size: 8vh;
+        font-size: 6vh;
         list-style: none;
         display: flex;
         flex-flow: column wrap;
