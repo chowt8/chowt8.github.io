@@ -1104,11 +1104,8 @@ button:active .arrow-head2{
     }
 
     .work-box h1 {
-        font-size: 80px;
-        font-weight: normal;
         text-align: left;
-        height: auto;
-        margin: 80px 0px 60px 0px;
+        margin: 80px 0px 40px 0px;
            
     }
 
