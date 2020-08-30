@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    
+    /* border: red 1px solid; */
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -485,6 +485,7 @@ header{
 }
 
 
+
 .inner-flex h4 {
     width: auto;
     font-family: "Agrandir Regular";
@@ -550,7 +551,7 @@ a.work-box{
     width: 100%;
     max-width: 720px;
     height: auto;
-    padding: 80px 20px 0px 20px;
+    padding: 60px 20px 0px 20px;
     border-bottom: 1px solid black;
     margin: 0px 0px 0px 0px;
     text-decoration: none;
@@ -564,8 +565,19 @@ a.work-box{
     font-family: "Agrandir Regular";
     font-size: 30px;
     font-weight: normal;
+    text-align: center;
     width: auto;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 0px 10px 0px;
+        
+}
+
+.work-box p {
+    font-family: "Agrandir Narrow";
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    width: auto;
+    margin: 0px 0px 40px 0px;
         
 }
 
@@ -993,17 +1005,24 @@ button:active .arrow-head2{
     }
 
 
-    .work-box h1 {
-        font-size: 60px;
-    }
-
-
     a.work-box{
         padding: 100px 60px 0px 60px;
         margin: 0px 0px 80px 0px;
         border-bottom: 0px ;
     }
 
+
+    .work-box h1 {
+        font-size: 40px;
+    }
+
+    .work-box p {
+        font-family: "Agrandir Narrow";
+        font-size: 20px;
+        margin: 0px 0px 40px 0px;
+    }
+
+ 
    
     
 
@@ -1068,7 +1087,6 @@ button:active .arrow-head2{
         
     }
 
-
  
    .inner-flex p{
     font-family: "Agrandir Regular";
@@ -1084,7 +1102,7 @@ button:active .arrow-head2{
     align-items: center;
     width: 90%;
     height: auto;
-    max-height: 3200px;
+    max-height: 3300px;
     padding: 0px 40px;
 
 }
@@ -1098,8 +1116,13 @@ button:active .arrow-head2{
 
     .work-box h1 {
         text-align: left;
-        margin: 80px 0px 40px 0px;
+        margin: 80px 0px 20px 0px;
            
+    }
+
+    .work-box p {
+        text-align: left;
+        margin: 0px 0px 60px 0px;
     }
 
     .hide-btn{
