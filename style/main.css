@@ -288,10 +288,6 @@ header{
 .flex-container{
     width: 100%;
     height: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -302,10 +298,7 @@ header{
 
 
 .flex-container.about-project{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
+  
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -476,7 +469,7 @@ header{
     font-weight: normal;
     text-align: center;
     font-size: 40px;
-    margin: 80px 20px 40px 20px;
+    margin: 100px 20px 40px 20px;
     
 }
 
@@ -1064,7 +1057,7 @@ button:active .arrow-head2{
 
  
     .inner-flex h1 {
-        margin: 0px 20px 80px 20px;
+        margin: 60px 20px 80px 20px;
     }
 
     .inner-flex h2{
