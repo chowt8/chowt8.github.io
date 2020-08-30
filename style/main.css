@@ -572,8 +572,9 @@ a.work-box{
 }
 
 .work-box p {
-    font-family: "Agrandir Narrow";
-    font-size: 16px;
+    font-family: "Agrandir Italic";
+    font-size: 18px;
+    color: rgba(34, 43, 58, 100%);
     font-weight: normal;
     text-align: center;
     width: auto;
@@ -1005,6 +1006,11 @@ button:active .arrow-head2{
     }
 
 
+
+    .inner-flex.work-row{
+        padding: 80px 80px;
+    }
+
     a.work-box{
         padding: 100px 60px 0px 60px;
         margin: 0px 0px 80px 0px;
@@ -1017,9 +1023,7 @@ button:active .arrow-head2{
     }
 
     .work-box p {
-        font-family: "Agrandir Narrow";
-        font-size: 20px;
-        margin: 0px 0px 40px 0px;
+        font-size: 24px;
     }
 
  
@@ -1087,12 +1091,7 @@ button:active .arrow-head2{
         
     }
 
- 
-   .inner-flex p{
-    font-family: "Agrandir Regular";
-    font-size: 20px;
-    font-weight: normal;
-    }
+
 
 
    .inner-flex.work-row{
@@ -1100,10 +1099,10 @@ button:active .arrow-head2{
     flex-flow: column wrap;
     align-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: auto;
-    max-height: 3300px;
-    padding: 0px 40px;
+    max-height: 3200px;
+    padding: 80px 80px;
 
 }
 
@@ -1116,7 +1115,7 @@ button:active .arrow-head2{
 
     .work-box h1 {
         text-align: left;
-        margin: 80px 0px 20px 0px;
+        margin: 80px 0px 10px 0px;
            
     }
 
@@ -1182,7 +1181,7 @@ button:active .arrow-head2{
         flex-flow: column wrap;
         align-content: space-between;
         align-items: center;
-        padding: 0px 0px;
+        padding: 80px 0px;
     
     }
 
