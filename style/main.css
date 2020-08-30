@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    /* border: red 1px solid; */
+    border: red 1px solid; 
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -343,7 +343,6 @@ header{
     border-radius: 4px;
     cursor: pointer;
     z-index: 10;
-    box-shadow: 10px 10px 0px rgba(0, 0, 0, 100%);
     
     
 }
@@ -685,19 +684,18 @@ figcaption{
 
 
 .inner-flex.project-info{
+    width: auto;
+    max-width: 650px;
     display: flex;
+    margin: 0px 20px;
+    padding: 40px 0px 40px 0px;
     flex-flow: row wrap;
     border-bottom: 1px solid black;
 
 }
 
-.inner-flex.project-info p{
-    font-family: "Agrandir Regular";
-    
-}
 
-
- .row{
+.inner-flex.project-info .row{
     width: 100%;
     height: auto;
     padding: 0px 0px 20px 0px;
@@ -710,15 +708,17 @@ figcaption{
     font-family: "Agrandir Italic";
     font-size: 16px;
     font-weight: normal;
+    margin: 0px 0px 5px 0px;
 }
 
-.inner-flex .row p {
+.row p {
+    font-family: "Agrandir Regular";
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: normal;
 }
 
 
-.past{
+.related{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;   
@@ -728,30 +728,7 @@ figcaption{
     height: auto;
     margin: 20px;
     
-
 }
-
-.stagger{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;   
-    align-items: center;
-    width: 100%;
-    max-width: 1440px;
-    height: auto;
-    margin: 40px 20px;
-}
-
-
-.rectangle{
-    margin-top: 20px;
-    height: auto;
-    width: 100%;
-    max-width: 1200px;
-    max-height: 800px;
-
-}
-
 
 
  .box h6{
@@ -1005,11 +982,19 @@ button:active .arrow-head2{
         background-color: white !important;
     }
 
+    .inner-flex.project-info{
+        margin: 0px 0px;
+    }
 
+
+    .inner-flex.project-info .row{
+        width: 50%;
+    }
 
     .inner-flex.work-row{
         padding: 80px 80px;
     }
+
 
     a.work-box{
         padding: 100px 60px 0px 60px;
@@ -1026,12 +1011,13 @@ button:active .arrow-head2{
         font-size: 24px;
     }
 
+
  
    
     
 
 
-    .past {
+    .related {
         justify-content: space-around;
         align-content: space-between;
         height: 1930px;
