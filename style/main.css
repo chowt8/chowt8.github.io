@@ -558,7 +558,7 @@ a.work-box.full{
     justify-content: flex-end;
     background-color: #EDF0F5;
     width: 100%;
-    max-width: 1440px;
+    max-width: 720px;
     height: auto;
     text-decoration: none;
     padding: 60px 40px 60px 40px;
@@ -1060,7 +1060,7 @@ button:active .arrow-head2{
 
  
     .inner-flex h1 {
-        padding: 80px 0px 60px 0px;
+        padding: 80px 0px 80px 0px;
     }
 
     .inner-flex h2{
@@ -1099,6 +1099,7 @@ button:active .arrow-head2{
     }
 
     a.work-box.full{
+        max-width: 1440px;
         padding: 80px 60px 80px 60px;
     }
 
