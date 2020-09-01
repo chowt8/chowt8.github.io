@@ -348,7 +348,7 @@ header{
 }
 
  .hide-btn{
-    margin: 20px;
+    margin: 20px auto;
     font-family: "Agrandir italic";
     padding: 10px 30px;
     text-align: center;
@@ -426,7 +426,7 @@ header{
     text-align: center;
     font-size: 40px;
     margin: 0px 20px 0px 20px;
-    padding: 80px 0px 60px 0px;
+    padding: 80px 0px 40px 0px;
     
 }
 
@@ -457,12 +457,11 @@ header{
 
 .inner-flex.paragraph h4{
     width: 100%;
-    font-family: "Agrandir Regular";
+    font-family: "Agrandir Narrow";
     font-weight: normal;
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
     margin: 20px 0px;
-    padding: 0px 20px;
     
 }
 
@@ -471,6 +470,8 @@ header{
     font-family: "Agrandir Regular";
     font-size: 18px;
     font-weight: normal;
+    width: 100%;
+    
 }
 
 
@@ -498,7 +499,6 @@ header{
 .no-select{
     width: auto;
     height: auto;
-    user-drag: none;
     user-select: none;
     -webkit-user-drag: none;
     -moz-user-select: none;
@@ -620,7 +620,7 @@ figcaption{
 
 .inner-flex.inner-flex.paragraph ul{
     
-    
+    width: 100%;
     max-width: 1440px;
     display: flex;
     flex-flow: column wrap;
@@ -649,6 +649,7 @@ figcaption{
     display: flex;
     max-width: 650px;
     line-height: 1.5;
+    padding: 0px 20px;
     
 }
 
@@ -676,7 +677,7 @@ figcaption{
     max-width: 650px;
     display: flex;
     margin: 0px 20px;
-    padding: 20px 0px 40px 0px;
+    padding: 0px 0px 40px 0px;
     flex-flow: row wrap;
     border-bottom: 1px solid black;
 
@@ -966,12 +967,14 @@ button:active .arrow-head2{
 
 
 
+
     #transition{
         background-color: white !important;
     }
 
     .inner-flex.project-info{
-        margin: 0px 0px;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
     }
 
 
@@ -979,7 +982,21 @@ button:active .arrow-head2{
         width: 50%;
     }
 
-    .inner-flex.work-row{
+    
+    .inner-flex.paragraph{
+        padding: 0px 0px;
+        
+    }
+
+
+.inner-flex.paragraph h4{
+
+    margin: 20px 0px;
+    
+}
+
+   
+.inner-flex.work-row{
         padding: 80px 80px;
     }
 
@@ -1060,7 +1077,7 @@ button:active .arrow-head2{
 
  
     .inner-flex h1 {
-        padding: 80px 0px 80px 0px;
+        padding: 40px 0px 80px 0px;
     }
 
     .inner-flex h2{
@@ -1119,7 +1136,7 @@ button:active .arrow-head2{
 
     .hide-btn{
         position: fixed;
-        transform: translateY(232px);
+        transform: translateY(100px);
     }
 
 
@@ -1129,9 +1146,15 @@ button:active .arrow-head2{
         height: 65vh;
     }
 
+    .inner-flex.project-info{
+        margin: 80px 0px 0px 0px;
+
+    }
+    
+
    
 
-    .past{
+    .related{
         justify-content: space-around;
         align-content: space-between;
         height: 2400px;
