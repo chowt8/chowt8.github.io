@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    /* border: red 1px solid; */
+   /* border: red 1px solid; */
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -425,7 +425,8 @@ header{
     font-weight: normal;
     text-align: center;
     font-size: 40px;
-    margin: 100px 20px 40px 20px;
+    margin: 80px 20px 0px 20px;
+    padding: 80px 0px;
     
 }
 
@@ -483,6 +484,10 @@ header{
     padding: 0px 0px 80px 0px;
 }
 
+.inner-flex.work-row{
+    padding: 0px 0px 0px 0px;
+}
+
 
 .inner-flex.btn{
     display: flex;
@@ -528,6 +533,7 @@ a.work-box{
     text-align: center;
     width: auto;
     margin: 0px 0px 10px 0px;
+    padding: 0px;
         
 }
 
@@ -539,8 +545,30 @@ a.work-box{
     text-align: center;
     width: auto;
     margin: 0px 0px 40px 0px;
+    padding: 0px;
         
 }
+
+
+
+
+a.work-box.full{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    background-color: #EDF0F5;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    text-decoration: none;
+    padding: 60px 20px 60px 20px;
+    margin: 0px 0px 0px 0px;
+    border-bottom: 1px solid black;
+    
+
+}
+
+
 
 .work-box img{
     height: 100%;
@@ -957,26 +985,31 @@ button:active .arrow-head2{
     }
 
 
+
+
     a.work-box{
-        padding: 60px 40px 0px 40px;
+        padding: 80px 60px 0px 60px;
         margin: 0px 0px 80px 0px;
         border-bottom: 0px ;
+    }
+
+    a.work-box.full{
+        padding: 80px 60px 60px 60px;
+        margin: 0px 0px 0px 0px;
+    
     }
 
 
     .work-box h1 {
         font-size: 40px;
+        padding: 0px;
     }
 
     .work-box p {
         font-size: 24px;
     }
 
-
- 
    
-    
-
 
     .related {
         justify-content: space-around;
@@ -1027,7 +1060,8 @@ button:active .arrow-head2{
 
  
     .inner-flex h1 {
-        margin: 60px 20px 80px 20px;
+        margin: 80px 20px 0px 20px;
+        padding: 100px 0px;
     }
 
     .inner-flex h2{
@@ -1053,16 +1087,25 @@ button:active .arrow-head2{
 
 }
 
+.inner-flex.work-row.full{
+    margin: 0px;
+    padding: 0px 0px;
+
+}
+
     a.work-box{
         width: 47%;
         max-width: 700px;
-        padding: 60px 40px 0px 40px;
+        padding: 80px 60px 0px 60px;
         margin: 0px 0px 60px 0px;
     }
+
+
 
     .work-box h1 {
         text-align: left;
         margin: 0px 0px 10px 0px;
+        padding: 0px;
            
     }
 
@@ -1131,6 +1174,8 @@ button:active .arrow-head2{
         padding: 80px 0px;
     
     }
+
+
 
     .toggle-btn {
         margin: 20px 0px 40px 8px;
