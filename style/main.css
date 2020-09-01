@@ -562,7 +562,6 @@ a.work-box.full{
     height: auto;
     text-decoration: none;
     padding: 60px 20px 60px 20px;
-    margin: 0px 0px 0px 0px;
     border-bottom: 1px solid black;
     
 
@@ -1089,8 +1088,8 @@ button:active .arrow-head2{
 }
 
 .inner-flex.work-row.full{
-    margin: 0px;
-    padding: 0px 80px;
+    margin: 0px 80px;
+    padding: 0px;
 
 }
 
@@ -1102,9 +1101,7 @@ button:active .arrow-head2{
     }
 
     a.work-box.full{
-        width: 100%;
         padding: 80px 60px 80px 60px;
-        max-width: 1440px;
     }
 
 
