@@ -425,8 +425,8 @@ header{
     font-weight: normal;
     text-align: center;
     font-size: 40px;
-    margin: 80px 20px 0px 20px;
-    padding: 80px 0px;
+    margin: 0px 20px 0px 20px;
+    padding: 80px 0px 60px 0px;
     
 }
 
@@ -561,7 +561,7 @@ a.work-box.full{
     max-width: 1440px;
     height: auto;
     text-decoration: none;
-    padding: 60px 20px 60px 20px;
+    padding: 60px 40px 60px 40px;
     border-bottom: 1px solid black;
     
 
@@ -1060,8 +1060,7 @@ button:active .arrow-head2{
 
  
     .inner-flex h1 {
-        margin: 80px 20px 0px 20px;
-        padding: 100px 0px;
+        padding: 80px 0px 60px 0px;
     }
 
     .inner-flex h2{
@@ -1088,8 +1087,7 @@ button:active .arrow-head2{
 }
 
 .inner-flex.work-row.full{
-    margin: 0px 80px;
-    padding: 0px;
+    padding: 0px 80px;
 
 }
 
@@ -1176,6 +1174,11 @@ button:active .arrow-head2{
         align-content: space-between;
         align-items: center;
         padding: 80px 0px;
+    
+    }
+
+    .inner-flex.work-row.full{
+        padding: 0px 0px;
     
     }
 
