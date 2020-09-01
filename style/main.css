@@ -996,6 +996,7 @@ button:active .arrow-head2{
     a.work-box.full{
         padding: 80px 60px 60px 60px;
         margin: 0px 0px 0px 0px;
+        border-bottom: 0px solid black;
     
     }
 
@@ -1098,6 +1099,12 @@ button:active .arrow-head2{
         max-width: 700px;
         padding: 80px 60px 0px 60px;
         margin: 0px 0px 60px 0px;
+    }
+
+    a.work-box.full{
+        width: 100%;
+        padding: 80px 60px 80px 60px;
+        max-width: 1440px;
     }
 
 
