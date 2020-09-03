@@ -1,3 +1,12 @@
+*{
+-webkit-transition:all .5s ease;
+-moz-transition:all .5s ease;
+-o-transition:all .5s ease;
+transition:all .5s ease;
+}
+
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -515,7 +524,6 @@ a.work-box{
     justify-content: flex-end;
     background-color: #EDF0F5;
     width: 100%;
-    max-width: 720px;
     height: auto;
     padding: 100px 0px 0px 0px;
     text-decoration: none;
@@ -756,100 +764,6 @@ figcaption{
 /* ----------------------------------------------------------------MAIN BUTTON STYLES ----------------------------------------------------------------*/
 
 
-.button-flex{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px 0px 80px 0px;
-
-    
-}
-
-button{
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 16px;
-    background-color: white;
-    font-family: "Agrandir Narrow";
-    font-size: 20px;
-    font-weight: normal;
-    border: black solid 1.5px;
-    border-radius: 30px;
-    transition: all .2s ease;
-    
-    cursor: pointer;
-}
-
-
-
-button:hover{
-    transform: translateY(-5px);
-    background-color: rgba(0, 0, 0, 15%);
-    font-family: "Agrandir Narrow";
-}
-
-button:hover .icon-arrow-right{
-    transform: translateX( 4px);
-    transform: rotate(-45deg);
-}
-
-button:active{
-    background-color: black;
-    color: white;
-}
-
-button:active .arrow-body{
-    background-color: white;
-}
-
-button:active .arrow-head1{
-    background-color: white;
-}
-
-button:active .arrow-head2{
-    background-color: white;
-}
-
-
-.icon-arrow-right{
-    width: 24px;
-    height: 24px;
-    margin-left: 12px;
-    transition: all .2s ease;
-
-}
-
-.arrow-body{
-    width: 17px;
-    height: 2px;
-    position: relative;
-    top: 10px;
-    background-color: black;
-    
-}
-
-.arrow-head1{
-    position: relative;
-    right: -11px;
-    top: 5px;
-    width: 10px;
-    height: 2px;
-    background-color: black;
-    transform: rotate(45deg);
-    
-}
-.arrow-head2{
-    position: relative;
-    right: -11px;
-    top: 9px;
-    width: 10px;
-    height: 2px;
-    background-color: black;
-    transform: rotate(-45deg);
-}
-
 
 /* ----------------------------------------------------------------Media queries ----------------------------------------------------------------*/
 
@@ -897,8 +811,6 @@ button:active .arrow-head2{
     }
 
 
-
-
     #transition{
         background-color: white !important;
     }
@@ -935,6 +847,7 @@ button:active .arrow-head2{
 
 
     a.work-box{
+        max-width: 560px;
         padding: 120px 0px 0px 0px;
         
     }
@@ -1035,7 +948,7 @@ button:active .arrow-head2{
 
     a.work-box{
         width: 42%;
-        max-width: 700px;
+        max-width: 720px;
         padding: 160px 0px 0px 0px;
     }
 
