@@ -31,7 +31,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-   /* border: red 1px solid; */
+    /* border: red 1px solid; */
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -564,7 +564,7 @@ a.work-box{
 
 .work-box img{
     height: 100%;
-    padding: 0px 40px;
+    padding: 0px 60px;
     
 }
 
@@ -978,6 +978,13 @@ figcaption{
         margin: 0px 0px 80px 0px;
         padding: 0px;
     }
+
+
+    .work-box img{
+        padding: 0px 80px;
+        
+    }
+    
 
     .hide-btn{
         position: fixed;
