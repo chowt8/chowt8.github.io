@@ -471,7 +471,8 @@ header{
     font-weight: normal;
     font-size: 24px;
     text-align: left;
-    margin: 20px 0px;
+    margin: 40px 0px 10px 0px;
+    padding: 0px;
     
 }
 
