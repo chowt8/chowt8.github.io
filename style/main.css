@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-   /* border: red 1px solid; */
+    /* border: red 1px solid; */
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -31,7 +31,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1.2;
+    line-height: 1.2;
+    background-color: #EDF0F5;
 }
 ol, ul {
 	list-style: none;
@@ -114,7 +115,7 @@ img {
         
         width: 100%;
         max-width: 1440px;
-        padding: 0px 20px;
+        padding: 0px 40px;
         height: auto;
         display: flex;
         flex-flow: column;
@@ -425,7 +426,7 @@ header{
     font-weight: normal;
     text-align: center;
     font-size: 40px;
-    margin: 0px 20px 0px 20px;
+    margin: 80px 40px 0px 40px;
     padding: 80px 0px 40px 0px;
     
 }
@@ -516,11 +517,10 @@ a.work-box{
     width: 100%;
     max-width: 720px;
     height: auto;
-    padding: 60px 20px 0px 20px;
-    border-bottom: 1px solid black;
-    margin: 0px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
     text-decoration: none;
     color: black;
+    border-bottom: 1px solid black;
     overflow: hidden;
 
 }
@@ -532,8 +532,9 @@ a.work-box{
     font-weight: normal;
     text-align: center;
     width: auto;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 40px 10px 40px;
     padding: 0px;
+    
         
 }
 
@@ -544,33 +545,16 @@ a.work-box{
     font-weight: normal;
     text-align: center;
     width: auto;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 40px 60px 40px;
     padding: 0px;
         
 }
 
 
 
-
-a.work-box.full{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-    background-color: #EDF0F5;
-    width: 100%;
-    max-width: 720px;
-    height: auto;
-    text-decoration: none;
-    padding: 60px 40px 60px 40px;
-    border-bottom: 1px solid black;
-    
-
-}
-
-
-
 .work-box img{
     height: 100%;
+    padding: 0px 40px;
     
 }
 
@@ -766,59 +750,6 @@ figcaption{
 }
 
 
-.scroll-flex{
-    width: 100%;
-    height: auto;
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 25%;
-    margin: 80px 0px;
-    padding-right: 40px;
-
-}
-.scroll-flex::-webkit-scrollbar{
-    display: none;
-}
-
-
-
-
-
-.scroll-box{
-    height: fit-content;
-    overflow: hidden;
-    margin-left: 20px;
-    margin-bottom: 40px;
-    flex-shrink: 0;
-    flex-grow: .5;
-    scroll-snap-align: start;
-    display: flex;  
-
-}
-
-.landscape{
-    width: 385px;
-    max-width: 790px;
-
-}
-
-.portrait{
-    width: 300px;
-    max-width: 600px;
-}
-
-
-
-
-
-
-.scroll-box img{
-    width: 100%;
-    height: auto;
-}
-
-
 
 
 
@@ -1004,22 +935,16 @@ button:active .arrow-head2{
 
 
     a.work-box{
-        padding: 80px 60px 0px 60px;
-        margin: 0px 0px 80px 0px;
-        border-bottom: 0px ;
-    }
-
-    a.work-box.full{
-        padding: 80px 60px 60px 60px;
-        margin: 0px 0px 0px 0px;
-        border-bottom: 0px solid black;
-    
+        padding: 120px 0px 0px 0px;
+        
     }
 
 
     .work-box h1 {
         font-size: 40px;
+        margin: 0px 0px 10px 0px;
         padding: 0px;
+        
     }
 
     .work-box p {
@@ -1075,10 +1000,6 @@ button:active .arrow-head2{
         width: 75%;  
     }
 
- 
-    .inner-flex h1 {
-        padding: 40px 0px 80px 0px;
-    }
 
     .inner-flex h2{
         
@@ -1103,35 +1024,27 @@ button:active .arrow-head2{
 
 }
 
-.inner-flex.work-row.full{
-    padding: 0px 80px;
 
-}
 
     a.work-box{
-        width: 47%;
+        width: 42%;
         max-width: 700px;
-        padding: 80px 60px 0px 60px;
-        margin: 0px 0px 60px 0px;
+        padding: 160px 0px 0px 0px;
     }
-
-    a.work-box.full{
-        max-width: 1440px;
-        padding: 80px 60px 80px 60px;
-    }
-
 
 
     .work-box h1 {
         text-align: left;
         margin: 0px 0px 10px 0px;
         padding: 0px;
+        
            
     }
 
     .work-box p {
         text-align: left;
-        margin: 0px 0px 40px 0px;
+        margin: 0px 0px 80px 0px;
+        padding: 0px;
     }
 
     .hide-btn{
@@ -1201,10 +1114,7 @@ button:active .arrow-head2{
     
     }
 
-    .inner-flex.work-row.full{
-        padding: 0px 0px;
-    
-    }
+
 
 
 
