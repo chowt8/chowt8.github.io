@@ -31,7 +31,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    /* border: red 1px solid; */
+   /* border: red 1px solid; */
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -341,8 +341,7 @@ header{
 .toggle-btn {
     
     background-color: white;
-    margin: 20px;
-    font-family: "Agrandir Narrow";
+    font-family: "Agrandir Regular";
     padding: 12px 30px;
     text-align: center;
     font-size: 20px;
@@ -447,7 +446,7 @@ header{
     font-weight: normal;
     font-size: 30px;
     text-align: center;
-    margin: 40px 20px 40px 20px;
+    margin: 80px 20px;
 
 }
 
@@ -459,6 +458,7 @@ header{
     font-weight: normal;
     font-size: 20px;
     text-align: center;
+    padding: 0px 20px;
 
 }
 
@@ -467,7 +467,7 @@ header{
 
 .inner-flex.paragraph h4{
     width: 100%;
-    font-family: "Agrandir Narrow";
+    font-family: "Agrandir Regular";
     font-weight: normal;
     font-size: 24px;
     text-align: left;
@@ -524,6 +524,7 @@ a.work-box{
     justify-content: flex-end;
     background-color: #EDF0F5;
     width: 100%;
+    max-width: 560px;
     height: auto;
     padding: 100px 0px 0px 0px;
     text-decoration: none;
@@ -805,10 +806,10 @@ figcaption{
     
     }
 
-    .toggle-btn {
-        margin: 20px 40px;
-
+    .toggle-btn{
+        margin-left: 40px;
     }
+
 
 
     #transition{
@@ -830,6 +831,12 @@ figcaption{
         padding: 0px 0px;
         
     }
+
+.inner-flex h4 {
+    max-width: 650px;
+    font-size: 24px;
+}
+
 
 
 .inner-flex.paragraph h4{
@@ -946,8 +953,12 @@ figcaption{
 
 
 
+
+
+
     a.work-box{
         width: 42%;
+        min-width: 560px;
         max-width: 720px;
         padding: 160px 0px 0px 0px;
     }
@@ -970,6 +981,7 @@ figcaption{
     .hide-btn{
         position: fixed;
         transform: translateY(100px);
+        margin-left: 100px;
     }
 
 
@@ -1034,13 +1046,13 @@ figcaption{
     
     }
 
+    .toggle-btn{
+        margin-left: 0px;
+    }
+    
 
-
-
-
-    .toggle-btn {
-        margin: 20px 0px 40px 8px;
-
+    .hide-btn{
+        margin-left: 0px;
     }
 
 
