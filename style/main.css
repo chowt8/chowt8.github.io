@@ -441,7 +441,7 @@ header{
     align-content: flex-start;
     height: auto;
     width: 100%;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 40px 0px;
 }
 
 
@@ -455,19 +455,31 @@ header{
 }
 
 
-.row ul {
+.inner-flex .row ul {
     width: auto;
     height: 100%;
 }
 
-.row ul li {
+.inner-flex .row ul li {
 
     font-size: 20px;
     margin: 0px 0px 10px 0px;
+    
 
 }
 
+.inner-flex .row ul li a {
 
+    text-decoration:none;
+    color: black;
+    cursor: pointer;
+}
+
+
+.inner-flex .row ul li a:hover {
+    color: rgb(0, 89, 255);
+    text-decoration: underline;
+}
 
 
 
@@ -838,9 +850,8 @@ figcaption{
         
     }
     
-    .row ul li {
+    .inner-flex .row ul li {
         font-size: 20px;
-        margin: 0px 0px 20px 0px;
     
     }
 
@@ -861,10 +872,10 @@ figcaption{
     }
     
     
-    .row ul li {
+    .inner-flex .row ul li {
 
         font-size: 24px;
-        margin: 0px 0px 40px 0px;
+        margin: 0px 0px 20px 0px;
     
     }
 
@@ -1031,7 +1042,6 @@ figcaption{
 
 
 
-
    .inner-flex.work-row{
     display: flex;
     flex-flow: column wrap;
@@ -1163,6 +1173,7 @@ figcaption{
 
     .inner-flex .row{
         padding: 0px 0px;
+        margin: 0px 0px 60px 0px;
     }
 
     .toggle-btn{
