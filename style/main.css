@@ -63,6 +63,8 @@ img {
     animation: fade 1s; 
 }
 
+
+
 @keyframes fade {
 
     from{ opacity: 0 }
@@ -574,7 +576,7 @@ a.work-box{
     border-radius: 100%;
     padding: 40px 20px;
     position: absolute;
-    transform: translate(240px, -60px) rotate(-15deg);
+    transform: translate(35vw, -40px) rotate(-15deg);
     z-index: 20;
 
 }
