@@ -574,7 +574,7 @@ a.work-box{
     height: auto;
     font-size: 14px;
     border-radius: 100%;
-    padding: 30px 20px;
+    padding: 20px 10px;
     position: absolute;
     transform: translate(45vw, -40px) rotate(-10deg);
     z-index: 20;
