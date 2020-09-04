@@ -874,7 +874,7 @@ figcaption{
 
 
     a.work-box{
-        max-width: 560px;
+        min-width: 520px;
         padding: 120px 0px 0px 0px;
         
     }
@@ -984,7 +984,7 @@ figcaption{
 
     a.work-box{
         width: 42%;
-        min-width: 560px;
+        min-width: 520px;
         max-width: 720px;
         padding: 160px 0px 0px 0px;
     }
