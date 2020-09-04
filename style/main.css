@@ -571,12 +571,12 @@ a.work-box{
     justify-content: center;
     align-items: center;
     width:fit-content;
-    height: 80px;
-    font-size: 20px;
+    height: auto;
+    font-size: 14px;
     border-radius: 100%;
-    padding: 40px 20px;
+    padding: 30px 20px;
     position: absolute;
-    transform: translate(35vw, -40px) rotate(-15deg);
+    transform: translate(45vw, -40px) rotate(-10deg);
     z-index: 20;
 
 }
@@ -892,6 +892,8 @@ figcaption{
     }
 
     .work-box .tag{
+        
+        font-size: 20px;
         transform: translate(300px, -40px) rotate(-15deg);
     
     }
