@@ -560,7 +560,24 @@ a.work-box{
         
 }
 
+.work-box .tag{
+    background-color: #FFD540;
+    font-family: "Agrandir Wide Black";
+    color: black;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 100%;
+    padding: 40px 20px;
+    position: absolute;
+    transform: translate(240px, -60px) rotate(-15deg);
+    z-index: 20;
 
+}
 
 .work-box img{
     height: 100%;
@@ -872,6 +889,10 @@ figcaption{
         font-size: 24px;
     }
 
+    .work-box .tag{
+        transform: translate(300px, -40px) rotate(-15deg);
+    
+    }
    
 
     .related {
@@ -985,6 +1006,8 @@ figcaption{
         padding: 0px 80px;
         
     }
+
+ 
     
 
     .hide-btn{
