@@ -892,7 +892,7 @@ figcaption{
     }
 
     .work-box .tag{
-        
+        padding: 40px 20px;
         font-size: 20px;
         transform: translate(300px, -40px) rotate(-15deg);
     
