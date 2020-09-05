@@ -430,8 +430,10 @@ header, footer{
 
 .inner-flex img {
     width: 100%;
-      
+    height: auto;
+    padding: 0px 40px;
 }
+
 
 .inner-flex .row{
     padding: 0px 40px;
@@ -957,6 +959,7 @@ figcaption{
     max-width: 650px;
     font-size: 24px;
     text-align: left;
+    line-height: 1.4;
     margin: 0px 0px 20px 0px;
 }
 
