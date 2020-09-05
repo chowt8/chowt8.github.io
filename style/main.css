@@ -276,8 +276,9 @@ header, footer{
     justify-content: center;
     align-items: center;
     
-
 }
+
+
 
 .headline{
     width: auto;
@@ -1023,7 +1024,6 @@ figcaption{
 
     .headline{
         
-  
         margin: 200px 40px 20px 40px;
         
     }
@@ -1064,9 +1064,6 @@ figcaption{
     padding: 120px 0px 0px 0px;
     
 }
-
-
-
 
 
 
