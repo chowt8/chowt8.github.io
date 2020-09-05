@@ -458,6 +458,7 @@ header, footer{
 .inner-flex .row ul {
     width: auto;
     height: 100%;
+    margin: 0px 0px 0px 0px;
 }
 
 .inner-flex .row ul li {
@@ -870,6 +871,9 @@ figcaption{
         font-size: 18px;
         
     }
+
+
+    
     
     
     .inner-flex .row ul li {
