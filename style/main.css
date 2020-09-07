@@ -31,7 +31,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    /* border: red 1px solid; */
+    /*border: red 1px solid;*/
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -517,6 +517,7 @@ header, footer{
     font-size: 20px;
     text-align: center;
     padding: 0px 20px;
+    margin: 0px 0px 20px 0px;
 
 }
 
@@ -786,7 +787,7 @@ figcaption{
     width: auto;
     max-width: 1440px;
     height: auto;
-    margin: 20px;
+    margin: 20px:
     
 }
 
@@ -829,6 +830,8 @@ figcaption{
 .box img{
     cursor: pointer;
     transition: all .3s ease-in-out;
+    margin: 0px;
+    padding: 0px;
 }
 
 .box img:hover{
@@ -1020,11 +1023,16 @@ figcaption{
     
     }
 
+    
 }
 
 @media screen and (min-width: 1280px) {
 
-
+    .inner-flex img {
+ 
+        margin: 0px 10vw;
+        width: 75%;
+    }
     
 
     .headline{
