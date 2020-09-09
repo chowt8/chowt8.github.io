@@ -31,7 +31,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    /* border: red 1px solid; */
+    border: red 1px solid;
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -281,7 +281,10 @@ header, footer{
 
 
 .headline{
-    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    width: 100%;
     height: auto;
     max-width: 1440px;
     margin: 160px 40px 40px 40px;
@@ -292,7 +295,10 @@ header, footer{
     font-family: "Agrandir Regular";
     font-size: 24px;
     font-weight: normal;
-    margin: 0px 0px 20px 0px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0px 40px 40px 40px;
+
     
 }
 
@@ -511,10 +517,10 @@ img.mock{
     width: auto;
     font-family: "Agrandir Regular";
     font-weight: normal;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
-    margin: 80px 20px;
-    line-height: 1.4;
+    margin: 0px 40px 40px 40px;
+
 
 }
 
@@ -880,7 +886,16 @@ figcaption{
 
 @media screen and (min-width: 720px) {
 
+    
 
+    
+    .headline h1 {
+        
+    font-size: 40px;
+    line-height: 1.6;
+   
+    
+    }
 
 
     img.mock{
@@ -911,19 +926,9 @@ figcaption{
  
     }
 
-    .headline{
-        width: 100%;
-        max-width: 1440px;
-        align-items: flex-start;
-        padding: 0px 40px;
-    }
 
-    .headline h1 {
-        font-size: 30px;
-        margin: 0px 0px 20px 0px;
-        max-width: 800px;
-           
-    }
+
+
 
 
     .section-header{
@@ -931,13 +936,6 @@ figcaption{
         margin: 60px 20px;
     }
 
-    .inner-flex h2 {
-        font-size: 36px;
-        text-align: left;
-        margin: 80px 40px;
-
-    
-    }
 
     .inner-flex.btn{
         display: flex;
@@ -970,6 +968,14 @@ figcaption{
         padding: 0px 0px;
         
     }
+
+
+ .inner-flex h2 {
+    font-size: 40px;
+    text-align: left;
+    
+
+    }   
 
 .inner-flex h4 {
     max-width: 650px;
@@ -1047,26 +1053,9 @@ figcaption{
   
     
 
-    .headline{
-        
-        margin: 200px 40px 20px 40px;
-        
-    }
 
 
-    .headline h1 {
-        font-size: 40px;
-        margin: 0px 0px 30px 0px;
-        
-    }
 
-
-    .inner-flex h2{
-        
-        font-size: 60px;
-        margin: 80px 40px 80px 40px;
-        
-    }
 
 
 
@@ -1089,6 +1078,13 @@ figcaption{
     
 }
 
+
+.inner-flex h2 {
+    font-size: 60px;
+
+    
+
+    }   
 
 
     a.work-box{
@@ -1166,6 +1162,13 @@ figcaption{
         padding: 0px 0px;
  
     }
+
+    .headline h1{
+        margin: 0px 0px 40px 0px;
+    }
+
+
+
     .inner-flex.work-row{
         display: flex;
         flex-flow: column wrap;
@@ -1175,10 +1178,12 @@ figcaption{
     
     }
 
-    .headline{
+    .inner-flex h2 {
+        margin: 0px 0px 40px 0px;
+        
+    
+        }   
 
-        padding: 0px 0px;
-    }
 
     .inner-flex .row{
         padding: 0px 0px;
@@ -1195,9 +1200,6 @@ figcaption{
     }
 
 
-    .inner-flex h2{
-        margin: 80px 0px 40px 0px;
-    }
 
 
 
