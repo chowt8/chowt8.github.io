@@ -1151,25 +1151,9 @@ figcaption{
     }
 
 
-    .bg-blue{
-        background-color: #D1EBFD;
-        padding-top: 120px;
+    .color-bg{
+        padding: 200px 0px 0px 0px;
     }
-    .bg-orange{
-        background-color: #FDEAD1;
-        padding-top: 120px;
-    }
-    
-    .bg-gray{
-        background-color: #EDF0F5;
-        padding-top: 120px;
-    }
-    
-    .bg-black{
-        background-color: #000000;
-        padding-top: 120px;
-    }
-  
 
 
 }
