@@ -347,7 +347,7 @@ header, footer{
     
     background-color: white;
     font-family: "Agrandir Regular";
-    padding: 12px 30px;
+    padding: 12px 24px;
     text-align: center;
     font-size: 20px;
     display: flex;
@@ -437,7 +437,8 @@ header, footer{
 }
 
 img.mock{
-    padding: 0px 40px;
+    width: 75%;
+    margin: 0px auto;
 }
 
 
@@ -510,9 +511,10 @@ img.mock{
     width: auto;
     font-family: "Agrandir Regular";
     font-weight: normal;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     margin: 80px 20px;
+    line-height: 1.4;
 
 }
 
@@ -882,7 +884,7 @@ figcaption{
 
 
     img.mock{
-        padding: 0px 80px;
+        margin: 0px auto;
     }
 
 
@@ -930,10 +932,9 @@ figcaption{
     }
 
     .inner-flex h2 {
-        width: auto;
-        font-size: 60px;
+        font-size: 36px;
         text-align: left;
-        margin: 40px;
+        margin: 80px 40px;
 
     
     }
@@ -1040,7 +1041,8 @@ figcaption{
 
 @media screen and (min-width: 1280px) {
     img.mock{
-        padding: 0px 200px;
+        margin: 0px auto;
+        max-width: 1200px;
     }
   
     
@@ -1061,9 +1063,8 @@ figcaption{
 
     .inner-flex h2{
         
-        font-size: 80px;
-        margin: 60px 40px 40px 40px;
-        width: auto;
+        font-size: 60px;
+        margin: 80px 40px 80px 40px;
         
     }
 
@@ -1195,7 +1196,7 @@ figcaption{
 
 
     .inner-flex h2{
-        margin: 60px 0px 40px 0px;
+        margin: 80px 0px 40px 0px;
     }
 
 
