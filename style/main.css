@@ -31,7 +31,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    /*border: red 1px solid;*/
+    /* border: red 1px solid; */
     box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
@@ -396,23 +396,27 @@ header, footer{
     
 }
 
-.bg-blue{
+.color-bg{
+    padding: 100px 0px 0px 0px;
+}
+
+.color-bg.blue{
     background-color: #D1EBFD;
-    padding-top: 80px;
+
 }
-.bg-orange{
+.color-bg.orange{
     background-color: #FDEAD1;
-    padding-top: 80px;
+
 }
 
-.bg-gray{
+.color-bg.gray{
     background-color: #EDF0F5;
-    padding-top: 80px;
+
 }
 
-.bg-black{
+.color-bg.black{
     background-color: #000000;
-    padding-top: 80px;
+
 }
 
 
@@ -427,7 +431,14 @@ header, footer{
       
 }
 
+.inner-flex img{
+    height: auto;
+    width: 100%;
+}
 
+img.mock{
+    padding: 0px 40px;
+}
 
 
 
@@ -511,8 +522,9 @@ header, footer{
     font-family: "Agrandir Regular";
     font-weight: normal;
     font-size: 20px;
-    text-align: center;
-    padding: 0px 20px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0px 40px;
     margin: 0px 0px 20px 0px;
 
 }
@@ -785,13 +797,14 @@ figcaption{
     width: auto;
     max-width: 1440px;
     height: auto;
-    margin: 20px;
+    margin: 40px;
     
 }
 
 
  .box h6{
     width: 100%;
+    max-width: 360px;
     font-family: "Agrandir Narrow";
     font-size: 24px;
     font-weight: normal;
@@ -818,7 +831,7 @@ figcaption{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 60px;
+    padding: 0px 40px 60px 40px;
     overflow: hidden;
     
     
@@ -830,12 +843,9 @@ figcaption{
     transition: all .3s ease-in-out;
     margin: 0px;
     padding: 0px;
+    border-bottom: 1px solid black;
 }
 
-.box img:hover{
-    transform: scale(1.05, 1.05);
-
-}
 
 
 
@@ -870,6 +880,12 @@ figcaption{
 
 
 
+
+    img.mock{
+        padding: 0px 80px;
+    }
+
+
     .inner-flex .row h3{
         width: 120px;
         font-size: 18px;
@@ -877,8 +893,6 @@ figcaption{
     }
 
 
-    
-    
     
     .inner-flex .row ul li {
 
@@ -960,7 +974,7 @@ figcaption{
     max-width: 650px;
     font-size: 24px;
     text-align: left;
-    line-height: 1.4;
+    line-height: 1.7;
     margin: 0px 0px 20px 0px;
 }
 
@@ -1009,12 +1023,12 @@ figcaption{
     .related {
         justify-content: space-around;
         align-content: space-between;
-        height: 1930px;
+        max-height: 1400px;
         margin: 40px;
     }
 
     .box {
-        width: 45%;
+        width: 42%;
         justify-content: flex-start;
         height: auto;
         
@@ -1025,7 +1039,9 @@ figcaption{
 }
 
 @media screen and (min-width: 1280px) {
-
+    img.mock{
+        padding: 0px 200px;
+    }
   
     
 
@@ -1130,7 +1146,7 @@ figcaption{
     .related{
         justify-content: space-around;
         align-content: space-between;
-        height: 2400px;
+        max-height: 1900px;
     
     }
 
