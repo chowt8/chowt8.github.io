@@ -75,26 +75,31 @@ img {
 @font-face {
     font-family: "Agrandir Narrow";
     src: url(./fonts/Agrandir-Narrow.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Agrandir Regular";
     src: url(./fonts/Agrandir-Regular.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Agrandir Italic";
     src: url(./fonts/Agrandir-Italic.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Agrandir Grand Heavy";
     src: url(./fonts/Agrandir-GrandHeavy.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Agrandir Wide Black Italic";
     src: url(./fonts/Agrandir-WideBlackItalic.otf);
+    font-display: swap;
 }
 
 /* Navigation Styles------------------------------------------------------------------ */
