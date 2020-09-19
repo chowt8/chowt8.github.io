@@ -53,7 +53,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navhide").style.top = "0";
   } else {
-    document.getElementById("navhide").style.top = "-50px";
+    document.getElementById("navhide").style.top = "-80px";
   }
   prevScrollpos = currentScrollPos;
 }
