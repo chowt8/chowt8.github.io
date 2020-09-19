@@ -107,7 +107,15 @@ img {
 }
 
 /* Navigation Styles------------------------------------------------------------------ */
-    nav{
+    
+#navhide{
+    top: 0;
+    position: fixed;
+}
+
+
+
+nav{
         display: flex;
         align-items: flex-start;
         width: 100%;
@@ -115,14 +123,13 @@ img {
         justify-content: center;
         z-index: 20;
         overflow: hidden;
-        position: fixed;
-        top: 0;
         transition: all 0.3s;
         background-color: rgba(255, 255, 255, 100);
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.096);
         
 
     }
+
+   
 
     .nav-active{
         background-color: rgba(255, 255, 255, 100);

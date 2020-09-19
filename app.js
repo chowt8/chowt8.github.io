@@ -47,7 +47,16 @@ closeInfo.addEventListener('click', () => {
 
 }
 
-
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navhide").style.top = "0";
+  } else {
+    document.getElementById("navhide").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 navSlide();
 showInfo();
