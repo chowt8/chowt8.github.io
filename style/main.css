@@ -172,7 +172,7 @@ nav{
     .logo a {
         font-family: "Agrandir Regular";
         font-weight: normal;
-        font-size: 20px;
+        font-size: 16px;
         z-index: 11;
         text-decoration: none;
         color: black;
@@ -217,7 +217,7 @@ nav{
     .menubox{
         font-family: "Agrandir Italic";
         font-weight: normal;
-        font-size: 20px;
+        font-size: 16px;
         width: auto;
         display: flex;
         justify-content: space-between;
@@ -906,7 +906,9 @@ figcaption{
 
 @media screen and (min-width: 720px) {
 
-    
+    .menubox, .logo h4{
+        font-size: 20px;
+    }
 
     
     .headline h1 {
