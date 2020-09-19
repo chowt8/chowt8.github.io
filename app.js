@@ -21,7 +21,6 @@ const navSlide = () => {
     });
  
 
-
 }
 
 
@@ -46,8 +45,9 @@ closeInfo.addEventListener('click', () => {
 
 });
 
-
 }
+
+
 
 navSlide();
 showInfo();
