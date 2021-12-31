@@ -85,7 +85,7 @@ header {
 
 @keyframes transitionInHeader {
 
-    0%{
+    0% {
         opacity: 0;
     }
 
@@ -93,7 +93,7 @@ header {
         opacity: 0;
     }
 
-    100%{
+    100% {
         opacity: 1;
     }
 
@@ -103,7 +103,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 2rem 1.5rem;
-    font-size: var(--font-size-base);
+    font-size: 20px;
 }
 
 
@@ -131,12 +131,12 @@ nav {
 @keyframes animateIn {
 
     0% {
-        transform: translateY(900px) rotateZ(20deg) ;
+        transform: translateY(900px) rotateZ(20deg);
 
     }
 
     100% {
-        transform: translateY(0px) rotateZ(0deg) ;
+        transform: translateY(0px) rotateZ(0deg);
 
     }
 }
@@ -349,6 +349,14 @@ footer p {
 
 
 /* media queries */
+
+@media screen and (max-width:414px) {
+
+    html {
+        font-size: 18px;
+    }
+
+}
 
 @media screen and (min-width:720px) {
 
