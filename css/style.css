@@ -6,15 +6,6 @@ body {
 
 }
 
-@font-face {
-    font-family: 'Editorial New Regular';
-    src: url(../fonts/EditorialNew-Regular.otf);
-}
-
-@font-face {
-    font-family: 'Editorial New Thin';
-    src: url(../fonts/EditorialNew-Thin.otf);
-}
 
 @font-face {
     font-family: 'Neue World Regular';
@@ -102,7 +93,6 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 2rem 1.5rem;
-    font-size: 1.25rem;
 }
 
 
@@ -115,7 +105,7 @@ nav {
 
 .greeting h1 {
     font-family: var(--display-font-family-2);
-    font-size: 4rem;
+    font-size: 2.5rem;
     width: auto;
     margin: 0 1.5rem;
     line-height: 1.3;
@@ -357,6 +347,21 @@ footer p {
     html {
         font-size: 20px;
     }
+
+    .greeting h1 {
+        font-size: 4rem;
+    }
+
+}
+
+@media screen and (min-width:1280px) {
+    
+
+
+.greeting h1 {
+    font-size: 5rem;
+}
+
 
 }
 
