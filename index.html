@@ -1,184 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tate Chow, Product Designer</title>
-    <meta name="description" content="Tate Chow is a product and industrial designer based in San Francisco, California."
-  />
-  <meta name="author" content="Tate Chow"/>
-  <meta property="og:title" content="Tate Chow"/>
-  <meta
-    property="og:description"
-    content="Tate Chow is a product and industrial designer based in San Francisco, California."
-  />
-  <meta property="og:url" content="http://www.tatechow.com" />
-  <meta property="og:image" content="" />
+    <title>Tate Chow • Design Portfolio</title>
 
-  <link rel="apple-touch-icon" href="icons/apple-touch-icon-@2x.png" />
-  <link rel="icon" type="image/png" href="icons/favicon-@2x.png"/>
- 
-    <link rel="stylesheet" href="style/main.css">
-    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <nav>
 
-        <div class="nav-container">
-    
-            <div class="nav-bar">
-    
-                <div class="logo">
-                    <a href="index.html">
-                        <h4>Tate Chow</h4>
-                    </a>
-                </div>
-    
-    
-                <div class="menubox">
-                    <h4>menu</h4> 
-                
-                    <div class="menu">
-                
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    
-                    </div>
-                
-                </div>
-    
-           </div>
+    <header>
+        <nav>
+            <p>Tate Chow</p>
+            <p>Design Portfolio</p>
+        </nav>
 
-
-           <ul class="nav-list">
-            <li>
-            <a href="index.html">Work</a>
-            </li>
-    
-            <li>
-            <a href="about.html">About</a>
-            </li>
-            </ul>
-    
+        <div class="greeting">
+            <h1 style="--animation-order: 1;">Tate Chow is</h1>
+            <h1 style="--animation-order: 2;">a product and</h1>
+            <h1 style="--animation-order: 3;">industrial designer</h1>
+            <h1 style="--animation-order: 4;">in Austin, Texas</h1>
         </div>
-    
-    </nav>
+
+
+
+    </header>
 
     <main>
 
-        <div class="flex-container">
-            <div class="inner-flex">
-                <h1>FEATURED WORK</h1>
+        <section class="featured fade-in">
+
+            <h2> Featured work </h2>
+
+            <article class="work">
+
+                <div class="info">
+                    <h4>Redfin</h4>
+                    <p>2020&#8212;Present</p>
+                    <p>
+                        On the Home Services team I design desktop, tablet, and mobile app experiences which enable
+                        Redfin to scope, plan, and manage thousands of home renovations every year.
+                    </p>
+                </div>
+
+                <img src="./images/Redfin/redfin-cover.jpg" alt="">
+
+            </article>
+
+            <article class="work fade-in">
+
+                <div class="info">
+                    <h4>Cruise</h4>
+                    <p>2019&#8212;2020</p>
+                    <p>
+                        During my time at Cruise, I was the sole designer supporting our fleet operations org. I lead
+                        design on all manner of software initiatives that allow Cruise to service, upgrade, and track
+                        its growing fleet of autonomous vehicles.
+                    </p>
+                </div>
+
+                <img src="./images/Cruise/cruise-cover.jpg" alt="">
+
+
+            </article>
+
+            <article class="work fade-in">
+
+                <div class="info">
+                    <h4>Yelp</h4>
+                    <p>2018&#8212;2019</p>
+                    <p>
+                        On the Search team, I designed experiences for people at the very beginning of a search on Yelp.
+                        Some key improvements I helped make are the large promotional photo header on the home screen,
+                        highlighted business attributes and contextual actions within search results.
+                </div>
+
+                <img src="./images/Yelp/yelp-cover.jpg" loading="lazy" alt="">
+
+            </article>
+
+            <article class="work fade-in">
+
+                <div class="info">
+                    <h4>Hibbett Sports</h4>
+                    <p>2017</p>
+                    <p>
+                        While at Prolific Interactive (acquired by WeWork) we were hired by Hibbett Sports to design and
+                        launch its first mobile apps. As the product design lead, I created our design system and
+                        collaborated with the team to build a top notch shopping experience.
+                    </p>
+
+                </div>
+
+                <img src="./images/hibbett-sports/hibbett-cover.jpg" loading="lazy" alt="">
+
+            </article>
+
+        </section>
+
+        <section class="other fade-in">
+            <h1>Other work</h1>
+            <div class="articles-grid-container">
+
+                <article class="grid-article">
+
+                    <img src="./images/plywood-furniture/plant-stand.jpg" loading="lazy" alt="">
+
+                    <div class="info">
+                        <h4> Plywood furniture</h4>
+                        <p>2020</p>
+                    </div>
+
+                </article>
+
+                <article class="grid-article">
+
+                    <a href="https://dribbble.com/tatechow/projects/5399183-Personal-Training-Business-Logo"
+                        target="_blank">
+                        <img src="./images/branding/jquest-circle.jpg" loading="lazy" alt="">
+
+                    </a>
+
+                    <div class="info">
+                        <h4> Logo for a personal training business </h4>
+                        <p>2021</p>
+                    </div>
+
+                </article>
+
+                <article class="grid-article">
+
+                    <img src="./images/fallback/bike-bag.jpg" loading="lazy" alt="">
+
+                    <div class="info">
+                        <h4>Frame bag v2</h4>
+                        <p>2021</p>
+                    </div>
+
+                </article>
+
+
             </div>
-        </div>
 
 
-       
-        
-        <div class="flex-container">
-            <div class="inner-flex work-row">
-
-                <a href="things-to-do.html" class="work-box">
-                    <div class="no-select">
-                        <h1>Finding things to do</h1>
-                        <p>Marketplaces at Yelp</p>
-                        <div class="featured no-select">
-                            <img draggable="false" src="images/landing/yelp-things-to-do.png" alt="">
-                        </div>
-                    </div>
-                </a>
+        </section>
 
 
-                <a href="#" class="work-box">
-                    <div class="no-select">
-                        <h1>Making food delivery tastier</h1>
-                        <p>Marketplaces at Yelp</p>
-                        <div class="featured no-select">
-                            <img draggable="false" src="images/landing/yelp-food-delivery.png" alt="">
-                        </div>
-                        <div class="tag">ETA: ARRIVING SOON!</div>
-                    </div>
-                </a>
+        <section class="contact fade-in">
+            <h2>
+                Catch me online
+            </h2>
 
-                
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/tatechow/" target="_blank">Linkedin</a></li>
+                <li><a href="https://dribbble.com/tatechow" target="_blank">Dribbble</a></li>
+                <li><a href="https://www.instagram.com/chow.haus/" target="_blank">Instagram</a></li>
+                <li><a href="https://github.com/chowt8" target="_blank">Github</a></li>
+                <li><a href="https://twitter.com/tatechow" target="_blank">Twitter</a></li>
+                <li><a href="https://pontifitate.substack.com/p/coming-soon?r=3grw4&utm_campaign=post&utm_medium=web"
+                        target="_blank">Substack</a></li>
+            </ul>
 
-                <a href="#" class="work-box">
-                    <div class="no-select">
-                        <h1>Refreshing search results</h1>
-                        <p>Search UX at Yelp</p>
-                        <div class="featured no-select">
-                            <img draggable="false" src="images/landing/yelp-search-results.png" alt="">
-                        </div>
-                        <div class="tag">COMING SOON!</div>
-                    </div>
-                </a>
-
-
-                <a href="#" class="work-box">
-                    <div class="no-select">
-                        <h1>Exploring modernization</h1>
-                        <p>Modernization at Yelp</p>
-                        <div class="featured no-select">
-                            <img draggable="false" src="images/landing/yelp-modernization.png" alt="image">
-                        </div>
-                        <div class="tag">DOWNLOADING...</div>
-                    </div>
-                </a>
-
-
-        
-                <a href="#" class="work-box">
-                    <div class="no-select">
-                        <h1>Redesigning Yelp’s home screen</h1>
-                        <p>Search UX at Yelp</p>
-                        <div class="featured no-select">
-                            <img draggable="false" src="images/landing/yelp-home-screen.png" alt="">
-                        </div>
-                        <div class="tag">IN THE WORKS!</div>
-                    </div>
-                </a>
-
-
-  
-        </div>
-
+        </section>
 
         <footer>
-         
-                <div class="headline">
-                    <h1>Tate Chow is a product and industrial designer based in Austin, Texas.</h1>
-                </div>
-
-       
+            <p>
+                &copy; Tate Chow 2022
+            </p>
         </footer>
 
-        <div class="flex-container">
-            <div class="inner-flex">
-                <div class="row">
-                   
-            
-                    <ul>
-                <li>
-                    <a href="https://www.instagram.com/chow.haus/" target="_blank">Instagram</a>
-                </li>
-                <li>
-                    <a href="https://dribbble.com/tatechow" target="_blank">Dribbble</a>
-                </li>
-                <li>
-                    <a href="https://github.com/chowt8" target="_blank">Github</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/tatechow/" target="_blank">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/tatechow" target="_blank">Twitter</a>
-                </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+
     </main>
-    <script src="app.js"></script>
+
+    <script src="./js/observer.js"></script>
+
 </body>
+
 </html>

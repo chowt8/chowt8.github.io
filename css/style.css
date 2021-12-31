@@ -1,0 +1,389 @@
+body {
+    font-family: var(--main-font-family), Arial, Helvetica, sans-serif;
+    background-color: var(--background-clr-1);
+    color: var(--foreground-clr-1);
+
+
+}
+
+@font-face {
+    font-family: 'Editorial New Regular';
+    src: url(../fonts/EditorialNew-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Editorial New Thin';
+    src: url(../fonts/EditorialNew-Thin.otf);
+}
+
+@font-face {
+    font-family: 'Neue World Regular';
+    src: url(../fonts/PPNeueWorld-Regular.otf);
+}
+
+
+/* observer.js below-------*/
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: all 600ms var(--bezier);
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* observer.js above ------*/
+
+
+
+html {
+    font-size: var(--font-size-base);
+
+}
+
+:root {
+
+    /*fonts */
+    --main-font-family: 'Dm Sans';
+    --display-font-family-1: 'Editorial New Regular';
+    --display-font-family-2: 'Neue World Regular';
+    --font-size-base: 16px;
+
+
+    /* colors */
+    --clr-light-1: #fff;
+    --clr-light-2: #cecece;
+    --clr-dark-1: #070707;
+    --clr-dark-2: #333;
+    --clr-gray-1: #585858;
+    --clr-gray-2: #666666;
+    --foreground-clr-1: var(--clr-dark-1);
+    --midground-clr-1: var(--clr-gray-1);
+    --hover-clr-1: var(--clr-light-2);
+    --background-clr-1: var(--clr-light-1);
+
+    /* animation */
+    --bezier: cubic-bezier(.7, .01, 0, 1);
+
+}
+
+img {
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+
+header {
+    max-width: 1600px;
+    margin: 0 auto;
+    animation: transitionInHeader 1000ms;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes transitionInHeader {
+
+    0%{
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1.5rem;
+}
+
+
+.greeting {
+    padding-top: 10rem;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.greeting h1 {
+    font-family: var(--display-font-family-2);
+    font-size: 3.5rem;
+    width: auto;
+    margin: 0 1.5rem;
+    line-height: 1.3;
+    animation: animateIn;
+    animation-duration: 1600ms;
+    animation-timing-function: var(--bezier);
+    animation-delay: calc(var(--animation-order) * 200ms);
+
+}
+
+
+@keyframes animateIn {
+
+    0% {
+        transform: translateY(900px) rotateZ(20deg) ;
+
+    }
+
+    100% {
+        transform: translateY(0px) rotateZ(0deg) ;
+
+    }
+}
+
+
+
+
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    animation: transitionInMain 600ms;
+    animation-timing-function: var(--bezier);
+}
+
+@keyframes transitionInMain {
+
+    from {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.featured {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+.featured h2 {
+    color: var(--foreground-clr);
+    font-size: 3rem;
+    margin: 12rem 1.5rem;
+}
+
+.work {
+    display: flex;
+    flex-flow: column wrap-reverse;
+    margin: 0 1.5rem 10rem 1.5rem;
+}
+
+
+.work .info {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+}
+
+.work .info h4 {
+    width: 15%;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.work .info p {
+    color: var(--midground-clr-1);
+    max-width: 65ch;
+    margin-bottom: 1.5rem;
+    line-height: 1.65;
+}
+
+
+.work img {
+    width: 100%;
+}
+
+
+.other {
+
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+
+
+.other h1 {
+    line-height: 1.3;
+    font-size: 3rem;
+    margin: 6rem 1.5rem 3rem 1.5rem;
+
+}
+
+
+.articles-grid-container {
+    margin: 1.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    row-gap: 4rem;
+    column-gap: 6rem;
+
+}
+
+.grid-article {
+    display: flex;
+    flex-flow: column wrap;
+    height: fit-content;
+
+}
+
+
+.grid-article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: transform 300ms var(--bezier);
+}
+
+
+.grid-article .info {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.grid-article .info h4 {
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    padding-right: .5rem;
+}
+
+
+.grid-article .info p {
+    line-height: 1.4;
+    color: var(--midground-clr-1);
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    margin: 200px 0px;
+    max-width: 1600px;
+    color: var(--midground-clr-1);
+}
+
+
+footer p {
+    margin: 2rem;
+}
+
+.contact {
+    width: 100%;
+    max-width: 1600px;
+
+}
+
+.contact h2 {
+    font-family: var(--display-font-family-2);
+    font-size: 5rem;
+    line-height: 1.3;
+    margin: 12rem 1.5rem 6rem 1.5rem;
+
+}
+
+
+.social-links {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1600px;
+    margin: 1.5rem;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+    border-radius: 4rem;
+    margin-top: 2rem;
+    margin-right: .5rem;
+    overflow: hidden;
+}
+
+
+.social-links li a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--foreground-clr-1);
+    padding: 0.75rem 1.5rem;
+    transition: background-color 300ms ease-out;
+}
+
+.social-links li a:hover {
+    background-color: var(--hover-clr-1);
+}
+
+.social-links li a:active {
+    filter: brightness(.85);
+
+}
+
+
+
+
+/* media queries */
+
+@media screen and (min-width:720px) {
+
+    :root {
+        --font-size-base: 20px;
+    }
+
+
+    .greeting h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width:1280px) {
+
+
+    .greeting h1 {
+        font-size: 5rem;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+
+
+    .greeting h1 {
+        font-size: 6rem;
+    }
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-clr-1: var(--clr-dark-1);
+        --foreground-clr-1: var(--clr-light-1);
+        --midground-clr-1: var(--clr-light-2);
+        --hover-clr-1: var(--clr-dark-2)
+    }
+}
