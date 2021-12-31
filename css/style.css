@@ -240,7 +240,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     row-gap: 4rem;
-    column-gap: 6rem;
+    column-gap: 4rem;
 
 }
 
@@ -358,26 +358,11 @@ footer p {
 
 
     .greeting h1 {
-        font-size: 8rem;
-    }
-}
-
-@media screen and (min-width:1280px) {
-
-
-    .greeting h1 {
-        font-size: 10rem;
+        font-size: 6rem;
     }
 }
 
 
-@media screen and (min-width:1440px) {
-
-
-    .greeting h1 {
-        font-size: 12rem;
-    }
-}
 
 
 
