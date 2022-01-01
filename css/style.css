@@ -6,20 +6,10 @@ body {
 
 }
 
-
-@font-face {
-    font-family: 'Neue World Regular';
-    src: url(../fonts/PPNeueWorld-Regular.otf);
-}
-
-@font-face {
-    font-family: 'Woodland Regular';
-    src: url(../fonts/PPWoodland-Regular.otf);
-}
-
 @font-face {
     font-family: 'Woodland Ultralight';
     src: url(../fonts/PPWoodland-Ultralight.otf);
+    font-display: swap;
 }
 
 
@@ -50,7 +40,6 @@ html {
     /*fonts */
     --main-font-family: 'Dm Sans';
     --display-font-family-1: 'Woodland Ultralight';
-    --display-font-family-2: 'Neue World Regular';
     --header-one-size: 3rem;
     --header-two-size: 2.25rem;
 
