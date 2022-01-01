@@ -28,7 +28,7 @@ body {
 .fade-in {
     opacity: 0;
     transform: translateY(10rem);
-    transition: all 600ms var(--bezier);
+    transition: all 600ms ease-in-out;
 }
 
 .fade-in.appear {
@@ -360,8 +360,8 @@ footer p {
     }
 
     :root {
-        --header-one-size: 2rem;
-        --header-two-size: 1.125rem;
+        --header-one-size: 2.25rem;
+        --header-two-size: 1.5rem;
     }
 
 
@@ -374,7 +374,7 @@ footer p {
 
     :root {
         --header-one-size: 2.75rem;
-        --header-two-size: 1.5rem;
+        --header-two-size: 1.75rem;
     }
 
     .articles-grid-container {
