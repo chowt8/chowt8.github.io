@@ -9,8 +9,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Woodland Ultralight';
-    src: url(../fonts/PPWoodland-Ultralight.otf);
+    font-family: 'Woodland Regular';
+    src: url(../fonts/PPWoodland-Regular.otf);
     font-display: swap;
 }
 
@@ -41,7 +41,7 @@ html {
 
     /*fonts */
     --main-font-family: 'Dm Sans';
-    --display-font-family-1: 'Woodland Ultralight';
+    --display-font-family-1: 'Woodland Regular';
     --header-one-size: 3rem;
     --header-two-size: 2.25rem;
 
@@ -73,6 +73,10 @@ header {
     margin: 0 auto;
     animation: transitionInHeader 1000ms;
     animation-timing-function: ease-in-out;
+    background-image: url(/images/greeting.jpg);
+    background-size: cover;
+    padding-bottom: 4rem;
+
 
 }
 
@@ -95,12 +99,13 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 1.5rem;
+    padding: 2rem 1.5rem;
 }
 
 
 .greeting {
-    padding-top: 10rem;
+    
+    padding-top: 8rem;
     height: auto;
     width: 100%;
     overflow: hidden;
