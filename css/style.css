@@ -203,12 +203,14 @@ main {
 }
 
 .work .info p {
-    font-size: .85rem;
+    
     color: var(--midground-clr-1);
     max-width: 65ch;
     margin-bottom: 1.5rem;
     line-height: 1.65;
 }
+
+
 
 
 .work img {
@@ -358,20 +360,20 @@ footer p {
     }
 
     :root {
-        --header-one-size: 1.125rem;
+        --header-one-size: 2rem;
         --header-two-size: 1.125rem;
     }
 
 
 }
 
-@media screen and (max-width:440px) {
+@media screen and (max-width:425px) {
     html {
         font-size: 16px;
     }
 
     :root {
-        --header-one-size: 2.25rem;
+        --header-one-size: 2.75rem;
         --header-two-size: 1.5rem;
     }
 
