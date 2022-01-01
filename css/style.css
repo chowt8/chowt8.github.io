@@ -288,7 +288,7 @@ main {
 footer {
     display: flex;
     width: 100%;
-    margin: 200px 0px;
+    margin: 6rem 1.5rem 2rem 1.5rem;
     max-width: 1600px;
     color: var(--midground-clr-1);
 }
@@ -361,7 +361,7 @@ footer p {
 
     :root {
         --header-one-size: 2.25rem;
-        --header-two-size: 1.5rem;
+        --header-two-size: 1.125rem;
     }
 
 
@@ -374,7 +374,7 @@ footer p {
 
     :root {
         --header-one-size: 2.75rem;
-        --header-two-size: 1.75rem;
+        --header-two-size: 1.5rem;
     }
 
     .articles-grid-container {
