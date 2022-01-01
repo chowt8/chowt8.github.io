@@ -1,16 +1,12 @@
-
-
 body {
     font-family: var(--main-font-family), Arial, Helvetica, sans-serif;
     background-color: var(--background-clr-1);
     color: var(--foreground-clr-1);
-
-
 }
 
 @font-face {
-    font-family: 'Woodland Regular';
-    src: url(../fonts/PPWoodland-Regular.otf);
+    font-family: 'Editorial New Ultralight';
+    src: url(../fonts/PPEditorialNew-Ultralight.otf);
     font-display: swap;
 }
 
@@ -34,14 +30,13 @@ body {
 
 html {
     font-size: 18px;
-
 }
 
 :root {
 
     /*fonts */
     --main-font-family: 'Dm Sans';
-    --display-font-family-1: 'Woodland Regular';
+    --display-font-family-1: 'Editorial New Ultralight', 'Times New Roman', sans-serif;
     --header-one-size: 3rem;
     --header-two-size: 2.25rem;
 
@@ -58,7 +53,7 @@ html {
     --hover-clr-1: var(--clr-light-2);
     --background-clr-1: var(--clr-light-1);
 
-    /* animation */
+    /* greeting animation */
     --bezier: cubic-bezier(.7, .01, 0, 1);
 
 }
@@ -73,11 +68,6 @@ header {
     margin: 0 auto;
     animation: transitionInHeader 1000ms;
     animation-timing-function: ease-in-out;
-    background-image: url(/images/greeting.jpg);
-    background-size: cover;
-    padding-bottom: 4rem;
-
-
 }
 
 @keyframes transitionInHeader {
@@ -104,7 +94,7 @@ nav {
 
 
 .greeting {
-    
+
     padding-top: 8rem;
     height: auto;
     width: 100%;
@@ -198,7 +188,7 @@ main {
 
 
 .work .info p {
-    
+
     color: var(--midground-clr-1);
     max-width: 55ch;
     margin-bottom: 1.5rem;
