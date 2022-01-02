@@ -67,7 +67,7 @@ img {
 header {
     max-width: 1600px;
     margin: 0 auto;
-    animation: transitionInHeader 1000ms;
+    animation: transitionInHeader 1400ms;
     animation-timing-function: ease-in-out;
 }
 
@@ -160,7 +160,6 @@ main {
 
 
 .featured h2 {
-    font-weight: 500;
     color: var(--foreground-clr);
     font-size: var(--header-two-size);
     margin: 8rem 1.5rem 3rem 1.5rem;
@@ -268,7 +267,26 @@ main {
     color: var(--midground-clr-1);
 }
 
+
+/* Project page CSS */
+
+.project-details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border: 1px solid red;
+}
+
+.project-details h2 {
+
+    border: 1px solid green;
+}
+
+
+
+
 footer {
+    
     margin: 0 auto;
     max-width: 1600px;
     padding: 4rem 1.5rem;
