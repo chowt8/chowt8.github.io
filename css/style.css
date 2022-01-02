@@ -269,6 +269,8 @@ main {
 }
 
 footer {
+    margin: 0 auto;
+    max-width: 1600px;
     padding: 4rem 1.5rem;
 }
 
