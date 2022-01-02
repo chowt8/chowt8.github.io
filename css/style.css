@@ -178,20 +178,21 @@ main {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    margin-top: 2rem;
 }
 
+
 .work .info h4 {
-    font-weight: 500;
+    margin-top: 1rem;
+    font-size: 1rem;
     line-height: 1.65;
+    
 }
 
 
 .work .info p {
-
+margin-top: 1rem;
     color: var(--midground-clr-1);
     max-width: 55ch;
-    margin-bottom: 1.5rem;
     line-height: 1.65;
 }
 
@@ -255,17 +256,12 @@ main {
     justify-content: space-between;
 }
 
-.grid-article .info h4 {
-    font-size: 1rem;
-
-
-
+.grid-article .info h4{
+    margin-right: 2rem;
 }
 
 
 .grid-article .info p {
-    font-size: 1rem;
-    line-height: 1.4;
     color: var(--midground-clr-1);
 }
 
