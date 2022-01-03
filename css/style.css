@@ -40,6 +40,7 @@ html {
     --display-font-family: 'Editorial New Ultralight', 'Times New Roman', sans-serif;
     --header-one-size: 3.5rem;
     --header-two-size: 2.25rem;
+    --header-three-size: 2.5rem;
 
 
     /* colors */
@@ -171,20 +172,19 @@ main {
     margin: 0 1.5rem 6rem 1.5rem;
 }
 
-
 .work .info {
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin-top: 1rem;
 }
 
 
 .work .info h4 {
+    font-family: var(--display-font-family);
     margin-top: 1rem;
-    font-size: 1rem;
-    line-height: 1.65;
-
+    font-size: var(--header-three-size);
+    line-height: 1.25;
 }
 
 
@@ -194,9 +194,6 @@ main {
     max-width: 55ch;
     line-height: 1.65;
 }
-
-
-
 
 .work img {
     width: 100%;
@@ -228,7 +225,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     row-gap: 4rem;
-    column-gap: 4rem;
+    column-gap: 3rem;
 
 }
 
@@ -381,8 +378,13 @@ footer {
     }
 
     .articles-grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        column-gap: 1.5rem;
 
+    }
+
+    .grid-article .info {
+        flex-flow: column
     }
 
 }
@@ -403,19 +405,62 @@ footer {
 
 }
 
-@media screen and (min-width:1280px) {
 
-    html {
-        font-size: 20px;
+
+@media (min-width:1024px), screen and (orientation: landscape) {
+
+    .featured h2 {
+        margin-bottom: 8rem;
     }
 
+    .work {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        margin: 0 1.5rem 6rem 1.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    
+    .work .info {
+        
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        margin-right: 4rem;
+        margin-top: 0;
+    }
+    
+    
+    .work .info p {
+        
+        color: var(--midground-clr-1);
+        max-width: 55ch;
+        line-height: 1.65;
+    }
+    
+    .work img {
+        width: 60%;
+    }
+
+    .articles-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    }
+    
+}
+
+@media screen and (min-width:1280px) {
 
     :root {
         --header-one-size: 5rem;
         --header-two-size: 2.5rem;
+        --header-three-size: 3.5rem;
     }
 
 }
+
+
 
 
 @media (prefers-color-scheme: dark) {
