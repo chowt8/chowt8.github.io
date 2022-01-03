@@ -362,9 +362,6 @@ footer {
         --header-two-size: 1.125rem;
     }
 
-
-
-
 }
 
 @media screen and (max-width:425px) {
@@ -385,6 +382,12 @@ footer {
 
     .grid-article .info {
         flex-flow: column
+    }
+
+    .grid-article .info h4 {
+        margin-bottom: 1rem;
+        margin-right: 0;
+        line-height: 1.3;
     }
 
 }
