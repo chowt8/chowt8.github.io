@@ -352,18 +352,21 @@ main {
 
 }
 
-.project-asset .cover-width-img {
+.cover-width-img {
     width: 100%;
     object-fit: cover;
 }
 
-.project-asset .cover-height-img {
+.cover-height-img {
     height: 100%;
     object-fit: cover;
 }
 
 
 .blurb {
+    display: flex;
+    align-items: center;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     padding: 8rem 0;
