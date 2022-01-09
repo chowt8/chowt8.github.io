@@ -31,6 +31,7 @@ body {
 
 html {
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -64,7 +65,7 @@ img {
     -ms-interpolation-mode: nearest-neighbor;
 }
 
-abbr{
+abbr {
     text-decoration: none;
 }
 
@@ -96,6 +97,16 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--foreground-clr-1);
+}
+
+nav a:hover {
+    filter: brightness(55%);
+    text-decoration: underline;
 }
 
 
@@ -141,7 +152,7 @@ main {
     justify-content: center;
     align-items: center;
     animation: transitionInMain 600ms;
-    animation-timing-function: var(--bezier);
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes transitionInMain {
@@ -165,7 +176,7 @@ main {
 
 
 .featured h2 {
-    color: var(--foreground-clr);
+    color: var(--foreground-clr-1);
     font-size: var(--header-two-size);
     margin: 8rem 1.5rem 3rem 1.5rem;
 }
@@ -271,23 +282,137 @@ main {
 
 /* Project page CSS */
 
-.project-details {
+
+
+.project-header {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    border: 1px solid red;
+    padding: 7rem 1.5rem;
+    flex-flow: column wrap;
+
 }
 
-.project-details h2 {
+.project-header h1 {
 
-    border: 1px solid green;
+    font-family: var(--display-font-family);
+    font-size: var(--header-one-size);
+    color: var(--foreground-clr-1);
+    margin-bottom: 1rem;
+    animation: animateIn;
+    animation-duration: 1600ms;
+    animation-timing-function: var(--bezier);
+    animation-delay: calc(var(--animation-order) * 200ms);
+}
+
+.project-header p {
+    color: var(--midground-clr-1);
+    margin: 1rem 0;
+    line-height: 1.65;
+    animation: animateIn;
+    animation-duration: 1600ms;
+    animation-timing-function: var(--bezier);
+    animation-delay: calc(var(--animation-order) * 200ms);
+
+}
+
+.full-width {
+    width: 100%;
+    max-height: 120vh;
+    display: flex;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.full-width img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.half-width {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.project-asset {
+    width: 50%;
+    height: 50vw;
+    background-color: var(--clr-dark-1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-asset .cover-width-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-asset .cover-height-img {
+    height: 100%;
+    object-fit: cover;
 }
 
 
+.blurb {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 8rem 0;
+}
+
+.blurb p {
+    color: var(--midground-clr-1);
+    margin: 1rem 0;
+    line-height: 1.65;
+    max-width: 55ch;
+    margin: 0 1.5rem;
+}
+
+.blurb ul {
+    margin: 1rem 1.5rem;
+    color: var(--midground-clr-1);
+    list-style: disc outside;
+    padding-left: 1.5rem;
+
+}
+
+.blurb ul li {
+    max-width: 45ch;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+
+}
+
+
+.next-project {
+    font-family: var(--display-font-family);
+    font-size: var(--header-three-size);
+}
+
+.next-project h2 a {
+    text-decoration: none;
+    color: var(--foreground-clr-1);
+}
+
+.next-project h2 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 
 footer {
-    
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 1600px;
     padding: 4rem 1.5rem;
@@ -295,7 +420,25 @@ footer {
 
 
 #copyright {
+
+    font-size: 1rem;
+    padding: 1rem 0;
     color: var(--midground-clr-1);
+}
+
+#back-to-top {
+
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--foreground-clr-1);
+    padding: 1rem 0;
+
+}
+
+#back-to-top:hover {
+    filter: brightness(55%);
+    text-decoration: underline;
+
 }
 
 
@@ -321,27 +464,30 @@ footer {
     margin: 0rem 1.5rem;
 }
 
-.social-links li {
+.social-links li,
+.view-project {
+    width: fit-content;
     display: flex;
     align-items: center;
     border-radius: 4rem;
     margin-top: 1.5rem;
     margin-right: 1rem;
     overflow: hidden;
-    border: 1px solid var(--clr-gray-1);
+    border: 1px solid var(--foreground-clr-1);
 }
 
 
-.social-links li a {
+.social-links li a,
+.view-project a {
     font-size: 1rem;
-    font-size: 1.25rem;
     text-decoration: none;
     color: var(--foreground-clr-1);
     padding: 0.75rem 1.5rem;
     transition: background-color 300ms ease-out;
 }
 
-.social-links li a:hover {
+.social-links li a:hover,
+.view-project a:hover {
     background-color: var(--hover-clr-1);
 }
 
@@ -349,6 +495,12 @@ footer {
     filter: brightness(.85);
 
 }
+
+.viewproject a:active {
+    filter: brightness(.85);
+
+}
+
 
 
 
@@ -369,6 +521,7 @@ footer {
 }
 
 @media screen and (max-width:425px) {
+
     html {
         font-size: 16px;
     }
@@ -378,10 +531,10 @@ footer {
         --header-two-size: 1.5rem;
     }
 
+
     .articles-grid-container {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         column-gap: 1.5rem;
-
     }
 
     .grid-article .info {
@@ -394,8 +547,19 @@ footer {
         line-height: 1.3;
     }
 
-}
+    .half-width {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
 
+    }
+
+    .project-asset {
+        width: 100vw;
+        height: 100vw;
+    }
+
+}
 
 
 @media screen and (min-width:768px) {
@@ -408,13 +572,11 @@ footer {
         --header-one-size: 3.5rem;
         --header-two-size: 2rem;
     }
-
-
 }
 
 
-
-@media (min-width:1024px), screen and (orientation: landscape) {
+@media (min-width:1024px),
+screen and (orientation: landscape) {
 
     .featured h2 {
         margin-bottom: 8rem;
@@ -426,35 +588,42 @@ footer {
         margin: 0 1.5rem 6rem 1.5rem;
         justify-content: flex-start;
         align-items: flex-start;
-        
     }
-    
+
     .work .info {
-        
         display: flex;
         flex-flow: column wrap;
         justify-content: flex-start;
         margin-right: 4rem;
         margin-top: 0;
     }
-    
-    
+
+
     .work .info p {
-        
         color: var(--midground-clr-1);
         max-width: 55ch;
         line-height: 1.65;
     }
-    
-    .work img {
+
+    .visual-asset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 60%;
+        max-height: 100vh;
+        overflow: hidden;
+
+    }
+
+    .visual-asset img {
+
+        object-fit: cover;
     }
 
     .articles-grid-container {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-
     }
-    
+
 }
 
 @media screen and (min-width:1280px) {
@@ -466,8 +635,6 @@ footer {
     }
 
 }
-
-
 
 
 @media (prefers-color-scheme: dark) {
