@@ -364,13 +364,13 @@ main {
 
 
 .blurb {
-    font-size: 1rem;
     display: flex;
     flex-flow: column wrap;
     padding: 8rem 0;
 }
 
 .blurb p {
+    font-size: 1rem;
     color: var(--midground-clr-1);
     margin: 1rem 0;
     line-height: 1.65;
@@ -379,6 +379,7 @@ main {
 }
 
 .blurb ul {
+    font-size: 1rem;
     margin: 1rem 1.5rem;
     color: var(--midground-clr-1);
     list-style: disc outside;
