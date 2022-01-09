@@ -588,6 +588,7 @@ screen and (orientation: landscape) {
         margin: 0 1.5rem 6rem 1.5rem;
         justify-content: flex-start;
         align-items: flex-start;
+
     }
 
     .work .info {
@@ -596,6 +597,7 @@ screen and (orientation: landscape) {
         justify-content: flex-start;
         margin-right: 4rem;
         margin-top: 0;
+
     }
 
 
@@ -605,19 +607,9 @@ screen and (orientation: landscape) {
         line-height: 1.65;
     }
 
-    .visual-asset {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    .work img {
         width: 60%;
-        max-height: 100vh;
-        overflow: hidden;
-
-    }
-
-    .visual-asset img {
-
-        object-fit: cover;
     }
 
     .articles-grid-container {
