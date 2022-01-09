@@ -300,12 +300,13 @@ main {
     color: var(--foreground-clr-1);
     margin-bottom: 1rem;
     animation: animateIn;
-    animation-duration: 1600ms;
+    animation-duration: 1400ms;
     animation-timing-function: var(--bezier);
     animation-delay: calc(var(--animation-order) * 200ms);
 }
 
 .project-header p {
+    font-size: 1rem;
     color: var(--midground-clr-1);
     margin: 0 0 1rem 0;
     line-height: 1.65;
