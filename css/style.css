@@ -307,7 +307,7 @@ main {
 
 .project-header p {
     color: var(--midground-clr-1);
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
     line-height: 1.65;
     animation: animateIn;
     animation-duration: 1600ms;
@@ -363,6 +363,7 @@ main {
 
 
 .blurb {
+    font-size: 1rem;
     display: flex;
     flex-flow: column wrap;
     padding: 8rem 0;
@@ -394,6 +395,7 @@ main {
 
 
 .next-project {
+    padding: 1.5rem;
     font-family: var(--display-font-family);
     font-size: var(--header-three-size);
 }
@@ -401,6 +403,7 @@ main {
 .next-project h2 a {
     text-decoration: none;
     color: var(--foreground-clr-1);
+    line-height: 1.2;
 }
 
 .next-project h2 a:hover{
