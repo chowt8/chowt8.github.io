@@ -3,13 +3,16 @@ body {
     background-color: var(--background-clr-1);
     color: var(--foreground-clr-1);
     flex-shrink: 0;
+    font-variant-ligatures: common-ligatures;
 }
 
 @font-face {
-    font-family: 'Editorial New Ultralight';
-    src: url(../fonts/PPEditorialNew-Ultralight.otf);
+    font-family: 'Times Now Extralight';
+    src: url(../fonts/TimesNowExtraLight.woff2) format('woff2');
     font-display: swap;
 }
+
+
 
 
 /* observer.js below-------*/
@@ -38,10 +41,11 @@ html {
 
     /*fonts */
     --main-font-family: 'Dm Sans';
-    --display-font-family: 'Editorial New Ultralight', 'Times New Roman', sans-serif;
-    --header-one-size: 3.5rem;
+    --display-font-family: 'Times Now Extralight', 'Times New Roman', sans-serif;
+    --header-one-size: 3rem;
     --header-two-size: 2.25rem;
     --header-three-size: 2rem;
+
 
 
     /* colors */
@@ -60,6 +64,18 @@ html {
     --bezier: cubic-bezier(.7, .01, 0, 1);
 
 }
+
+h1 {
+    letter-spacing: -0.125rem;
+}
+
+h4 {
+    letter-spacing: -0.05rem;
+}
+
+
+
+
 
 img {
     -ms-interpolation-mode: nearest-neighbor;
@@ -112,18 +128,28 @@ nav a:hover {
 
 
 
+
+
 .greeting {
-    padding: 8rem 0rem 2rem 0rem;
-    height: auto;
+    
+    padding: 12rem 1.5rem 8rem 1.5rem;
     overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10vh;
+
+    
 }
 
 .greeting h1 {
+    
+    
     font-family: var(--display-font-family);
     font-size: var(--header-one-size);
-    width: auto;
-    margin: 0 1.5rem;
-    line-height: 1.3;
+    color: var(--foreground-clr-1);
+    margin-bottom: 1.25rem;
     animation: animateIn;
     animation-duration: 1600ms;
     animation-timing-function: var(--bezier);
@@ -197,9 +223,10 @@ main {
 
 .work .info h4 {
     font-family: var(--display-font-family);
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: var(--header-three-size);
-    line-height: 1.25;
+    line-height: 1.15;
+    
 }
 
 
@@ -285,16 +312,18 @@ main {
 
 
 .project-header {
+    min-height: 65vh;
     max-width: 800px;
     margin: 0 auto;
     display: flex;
-    padding: 7rem 1.5rem;
-    flex-flow: column wrap;
+    padding: 8rem 1.5rem;
+    flex-flow: column nowrap;
+    justify-content: center;
 
 }
 
 .project-header h1 {
-
+    
     font-family: var(--display-font-family);
     font-size: var(--header-one-size);
     color: var(--foreground-clr-1);
@@ -411,7 +440,7 @@ main {
     line-height: 1.2;
 }
 
-.next-project h2 a:hover{
+.next-project h2 a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -522,7 +551,7 @@ footer {
     }
 
     :root {
-        --header-one-size: 2.5rem;
+        --header-one-size: 2rem;
         --header-two-size: 1.125rem;
     }
 
@@ -535,7 +564,7 @@ footer {
     }
 
     :root {
-        --header-one-size: 3rem;
+        --header-one-size: 2.5rem;
         --header-two-size: 1.5rem;
     }
 
@@ -628,10 +657,19 @@ screen and (orientation: landscape) {
 
 @media screen and (min-width:1280px) {
 
+  
+
+
+
     :root {
-        --header-one-size: 5rem;
+        --header-one-size: 6rem;
+        --project-header-size: 5rem;
         --header-two-size: 2.5rem;
-        --header-three-size: 3rem;
+        --header-three-size: 4rem;
+    }
+
+    .project-header h1 {
+        font-size: var(--project-header-size);
     }
 
 }
