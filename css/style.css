@@ -129,14 +129,12 @@ nav a:hover {
 
 .greeting {
 
-    padding: 8rem 1.5rem 5rem 1.5rem;
+    padding: 8rem 1.5rem 4rem 1.5rem;
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    align-items: center;
     margin-bottom: 5vh;
-
 
 }
 
@@ -616,7 +614,7 @@ footer {
     }
 
     :root {
-        --header-one-size: 3.5rem;
+        --header-one-size: 4rem;
         --header-two-size: 2rem;
     }
 }
@@ -624,6 +622,12 @@ footer {
 
 @media (min-width:1024px),
 screen and (orientation: landscape) {
+
+.greeting {
+
+    padding: 14rem 1.5rem 4rem 1.5rem;
+
+}
 
     .featured h2 {
         margin-bottom: 8rem;
@@ -667,7 +671,7 @@ screen and (orientation: landscape) {
 
 
     :root {
-        --header-one-size: 6rem;
+        --header-one-size: 6.5rem;
         --project-header-size: 5rem;
         --header-two-size: 2.5rem;
         --header-three-size: 4rem;
