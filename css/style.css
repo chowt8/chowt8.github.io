@@ -13,8 +13,6 @@ body {
 }
 
 
-
-
 /* observer.js below-------*/
 
 .fade-in {
@@ -27,9 +25,7 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
 /* observer.js above ------*/
-
 
 
 html {
@@ -38,15 +34,12 @@ html {
 }
 
 :root {
-
     /*fonts */
     --main-font-family: 'Dm Sans';
     --display-font-family: 'Times Now Extralight', 'Times New Roman', sans-serif;
     --header-one-size: 3rem;
     --header-two-size: 2.25rem;
     --header-three-size: 2rem;
-
-
 
     /* colors */
     --clr-light-1: #fff;
@@ -62,14 +55,13 @@ html {
 
     /* greeting animation */
     --bezier: cubic-bezier(.7, .01, 0, 1);
-
 }
 
 h1 {
     letter-spacing: -0.125rem;
 }
 
-h2 {
+.next-project h2 {
     letter-spacing: -0.08rem;
 }
 
