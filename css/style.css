@@ -391,9 +391,8 @@ main {
 .blurb {
     display: flex;
     align-items: center;
-    width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     padding: 8rem 0;
 }
 
@@ -407,7 +406,6 @@ main {
 }
 
 .blurb ul {
-    font-size: 1rem;
     margin: 1rem 1.5rem;
     color: var(--midground-clr-1);
     list-style: disc outside;
@@ -416,6 +414,7 @@ main {
 }
 
 .blurb ul li {
+    font-size: 1rem;
     max-width: 45ch;
     line-height: 1.5;
     margin-bottom: 1rem;
