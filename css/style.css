@@ -344,7 +344,7 @@ main {
 
 .full-width {
     width: 100%;
-    max-height: 120vh;
+    max-height: 130vh;
     display: flex;
     overflow-y: hidden;
     justify-content: center;
@@ -667,7 +667,7 @@ screen and (orientation: landscape) {
         --header-one-size: 6.5rem;
         --project-header-size: 5rem;
         --header-two-size: 2.5rem;
-        --header-three-size: 4rem;
+        --header-three-size: 3.25rem;
     }
 
     .project-header h1 {
