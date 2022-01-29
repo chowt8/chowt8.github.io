@@ -359,6 +359,10 @@ main {
 
 }
 
+#375x667-video {
+    max-width: 375px;
+}
+
 .half-width {
     width: 100%;
     display: flex;
