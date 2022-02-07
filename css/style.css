@@ -680,7 +680,7 @@ screen and (orientation: landscape) {
     }
 
     .articles-grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 
 }
