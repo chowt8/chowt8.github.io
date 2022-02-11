@@ -8,11 +8,11 @@ body {
     text-size-adjust: none;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Times Now Extralight';
     src: url(../fonts/TimesNowExtraLight.woff2) format('woff2');
     font-display: swap;
-} 
+} */
 
 /**
  * @license
@@ -60,7 +60,7 @@ html {
 :root {
     /*fonts */
     --main-font-family: 'Dm Sans';
-    --display-font-family: 'Times Now Extralight', 'Times New Roman', sans-serif;
+    --display-font-family: 'DM Sans', Arial, sans-serif;
     --header-one-size: 3rem;
     --header-two-size: 2.25rem;
     --header-three-size: 2rem;
@@ -81,17 +81,6 @@ html {
     --bezier: cubic-bezier(.7, .01, 0, 1);
 }
 
-h1 {
-    letter-spacing: -0.125rem;
-}
-
-.next-project h2 {
-    letter-spacing: -0.08rem;
-}
-
-h4 {
-    letter-spacing: -0.05rem;
-}
 
 
 img {
@@ -573,8 +562,8 @@ footer {
     }
 
     :root {
-        --header-one-size: 2.75rem;
-        --header-two-size: 2rem;
+        --header-one-size: 1.5rem;
+        --header-two-size: 1.25rem;
     }
 
 
@@ -632,7 +621,7 @@ footer {
     }
 
     :root {
-        --header-one-size: 4rem;
+        --header-one-size: 3rem;
         --header-two-size: 2rem;
     }
 }
@@ -653,21 +642,17 @@ screen and (orientation: landscape) {
 
     .work {
         display: flex;
-        flex-flow: row-reverse nowrap;
-        margin: 0 1.5rem 6rem 1.5rem;
+        flex-flow: column nowrap;
+        margin:5rem 1.5rem 6rem 1.5rem;
         justify-content: flex-start;
         align-items: flex-start;
-
     }
 
     .work .info {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        margin-right: 4rem;
-        margin-top: 0;
-
+        margin-top: 2rem;
     }
+
+
 
     .work .info p {
         color: var(--midground-clr-1);
@@ -675,9 +660,9 @@ screen and (orientation: landscape) {
         line-height: 1.65;
     }
 
-    .work img {
+   /* .work img {
         width: 60%;
-    }
+    } */
 
     .articles-grid-container {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -689,27 +674,13 @@ screen and (orientation: landscape) {
 
 
     :root {
-        --header-one-size: 6.5rem;
-        --project-header-size: 5rem;
+        --header-one-size: 4rem;
         --header-two-size: 2.5rem;
         --header-three-size: 3.25rem;
     }
 
-    .project-header h1 {
-        font-size: var(--project-header-size);
-    }
 
-    h1 {
-        letter-spacing: -0.275rem;
-    }
 
-    .next-project h2 {
-        letter-spacing: -0.175rem;
-    }
-
-    h4 {
-        letter-spacing: -0.125rem;
-    }
 
 }
 
