@@ -198,9 +198,8 @@ main {
     font-family: var(--display-font-family);
     text-transform: uppercase;
     color: var(--foreground-clr-1);
-    font-size: var(--header-one-size);
     margin: 10rem 1.5rem;
-    font-size: 6rem;
+    font-size: var(--header-one-size);
 }
 
 .work {
@@ -657,7 +656,7 @@ footer {
     }
 
     #xtra-large-display {
-        font-size: 7rem;
+        font-size: 6rem;
     }
 }
 
