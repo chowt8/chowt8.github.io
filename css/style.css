@@ -52,7 +52,7 @@ html {
     --accent-font-family: 'PP Stellar Regular', Arial, sans-serif;
     --header-one-size: 3rem;
     --header-two-size: 2.25rem;
-    --header-three-size: 2rem;
+    --header-three-size: 1.5rem;
 
     /* colors */
     --clr-light-1: #fff;
@@ -253,7 +253,7 @@ main {
     font-size: var(--header-one-size);
     text-transform: uppercase;
     line-height: 1.3;
-    margin: 6rem 1.5rem 2rem 1.5rem;
+    margin: 6rem 1.5rem 6rem 1.5rem;
 }
 
 
@@ -515,7 +515,7 @@ footer {
 
 .contact h1 {
     font-family: var(--display-font-family);
-    font-size: var(--header-three-size);
+    font-size: var(--header-one-size);
     text-transform: uppercase;
     line-height: 1.3;
     margin: 12rem 1.5rem 2rem 1.5rem;
@@ -587,6 +587,7 @@ footer {
     :root {
         --header-one-size: 1.5rem;
         --header-two-size: 1.25rem;
+        --header-three-size: 1.125rem;
     }
 
     #xtra-large-display {
@@ -611,10 +612,11 @@ footer {
     :root {
         --header-one-size: 3rem;
         --header-two-size: 1.5rem;
+        --header-three-size: 1.25rem;
     }
 
     #xtra-large-display {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
 
@@ -670,9 +672,6 @@ screen and (orientation: landscape) {
 
     }
 
-    #xtra-large-display {
-        font-size: 9rem;
-    }
 
     .work {
         display: flex;
@@ -710,8 +709,13 @@ screen and (orientation: landscape) {
     :root {
         --header-one-size: 4rem;
         --header-two-size: 2.5rem;
-        --header-three-size: 3.25rem;
+        --header-three-size: 2rem;
     }
+
+    #xtra-large-display {
+        font-size: 8rem;
+    }
+
 
 
 
