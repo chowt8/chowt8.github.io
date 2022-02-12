@@ -126,12 +126,12 @@ nav a:hover {
 
 .greeting {
 
-    padding: 8rem 1.5rem 4rem 1.5rem;
+    padding: 12rem 1.5rem 12rem 1.5rem;
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    margin-bottom: 5vh;
+    min-height: 50vh;
 
 }
 
@@ -140,7 +140,7 @@ nav a:hover {
     text-transform: uppercase;
     font-family: var(--display-font-family);
     color: var(--foreground-clr-1);
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
     animation: animateIn;
     animation-duration: 1600ms;
     animation-timing-function: var(--bezier);
@@ -666,12 +666,9 @@ footer {
 @media (min-width:1024px),
 screen and (orientation: landscape) {
 
-    .greeting {
-
-        padding: 14rem 1.5rem 4rem 1.5rem;
-
-    }
-
+#xtra-large-display {
+    font-size: 6rem;
+}
 
     .work {
         display: flex;
