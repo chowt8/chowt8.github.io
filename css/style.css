@@ -139,7 +139,6 @@ nav a:hover {
 .greeting h1 {
     text-transform: uppercase;
     font-family: var(--display-font-family);
-    font-size: var(--header-one-size);
     color: var(--foreground-clr-1);
     margin-bottom: 1rem;
     animation: animateIn;
@@ -147,6 +146,13 @@ nav a:hover {
     animation-timing-function: var(--bezier);
     animation-delay: calc(var(--animation-order) * 200ms);
 
+}
+
+#xtra-large-display {
+    font-family: var(--display-font-family);
+    text-transform: uppercase;
+    color: var(--foreground-clr-1);
+    font-size: var(--header-one-size);
 }
 
 
@@ -194,13 +200,7 @@ main {
 
 
 
-#xtra-large-display {
-    font-family: var(--display-font-family);
-    text-transform: uppercase;
-    color: var(--foreground-clr-1);
-    margin: 10rem 1.5rem;
-    font-size: var(--header-one-size);
-}
+
 
 .work {
     display: flex;
