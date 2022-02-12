@@ -131,6 +131,7 @@ nav a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-items: center;
     min-height: 50vh;
 
 }
@@ -193,10 +194,12 @@ main {
 }
 
 
+
 .featured {
     max-width: 1600px;
     margin: 0 auto;
 }
+
 
 
 
