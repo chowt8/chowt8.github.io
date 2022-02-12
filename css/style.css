@@ -1,5 +1,5 @@
 body {
-    font-family: var(--main-font-family), Arial, Helvetica, sans-serif;
+    font-family: var(--main-font-family);
     background-color: var(--background-clr-1);
     color: var(--foreground-clr-1);
     flex-shrink: 0;
@@ -8,30 +8,18 @@ body {
     text-size-adjust: none;
 }
 
-/*@font-face {
-    font-family: 'Times Now Extralight';
-    src: url(../fonts/TimesNowExtraLight.woff2) format('woff2');
-    font-display: swap;
-} */
 
-/**
- * @license
- * MyFonts Webfont Build ID 4300494, 2022-01-16T13:16:59-0500
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: TimesNow-ExtraLight by JHA
- * URL: https://www.myfonts.com/fonts/jha/times-now/extra-light/
- * Copyright: Copyright (c) 2014 by Jan Henrik Arnold. All rights reserved.
- * 
- * 
- * 
- * Â© 2022 MyFonts Inc
-*/
+@font-face {
+    font-family: 'PP Stellar Regular';
+    src: url(/fonts/ppstellar-regular.woff2);
+}
+
+
+
+@font-face {
+    font-family: 'PP Right Gothic Wide Black';
+    src: url(/fonts/ppright-gothic-wide-black.woff2);
+}
 
 
 
@@ -59,8 +47,9 @@ html {
 
 :root {
     /*fonts */
-    --main-font-family: 'Dm Sans';
-    --display-font-family: 'DM Sans', Arial, sans-serif;
+    --main-font-family: 'Dm Sans', Arial, sans-serif;
+    --display-font-family: 'PP Right Gothic Wide Black', Arial, sans-serif;
+    --accent-font-family: 'PP Stellar Regular', Arial, sans-serif;
     --header-one-size: 3rem;
     --header-two-size: 2.25rem;
     --header-three-size: 2rem;
@@ -116,12 +105,15 @@ header {
 }
 
 nav {
+    font-family: var(--accent-font-family);
+    text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     padding: 2rem 1.5rem;
 }
 
 nav a {
+
     text-decoration: none;
     color: var(--foreground-clr-1);
 }
@@ -143,8 +135,9 @@ nav a:hover {
 
 }
 
-.greeting h1 {
 
+.greeting h1 {
+    text-transform: uppercase;
     font-family: var(--display-font-family);
     font-size: var(--header-one-size);
     color: var(--foreground-clr-1);
@@ -200,10 +193,14 @@ main {
 }
 
 
-.featured h2 {
+
+#xtra-large-display {
+    font-family: var(--display-font-family);
+    text-transform: uppercase;
     color: var(--foreground-clr-1);
-    font-size: var(--header-two-size);
-    margin: 8rem 1.5rem 3rem 1.5rem;
+    font-size: var(--header-one-size);
+    margin: 10rem 1.5rem;
+    font-size: 6rem;
 }
 
 .work {
@@ -221,7 +218,8 @@ main {
 
 
 .work .info h4 {
-    font-family: var(--display-font-family);
+    font-family: var(--accent-font-family);
+    text-transform: uppercase;
     font-size: var(--header-three-size);
     line-height: 1.15;
 
@@ -252,7 +250,9 @@ main {
 
 
 .other h2 {
-    font-size: var(--header-two-size);
+    font-family: var(--display-font-family);
+    font-size: var(--header-one-size);
+    text-transform: uppercase;
     line-height: 1.3;
     margin: 6rem 1.5rem 2rem 1.5rem;
 }
@@ -297,6 +297,8 @@ main {
 }
 
 .grid-article .info h5 {
+    font-family: var(--accent-font-family);
+    text-transform: uppercase;
     margin-right: 2rem;
     line-height: 1.25;
 
@@ -304,6 +306,8 @@ main {
 
 
 .grid-article .info p {
+    font-family: var(--accent-font-family);
+    text-transform: uppercase;
     color: var(--midground-clr-1);
     line-height: 1.25;
 }
@@ -329,6 +333,7 @@ main {
     font-family: var(--display-font-family);
     font-size: var(--header-one-size);
     color: var(--foreground-clr-1);
+    text-transform: uppercase;
     margin-bottom: 0.75rem;
     animation: animateIn;
     animation-duration: 1400ms;
@@ -336,8 +341,16 @@ main {
     animation-delay: calc(var(--animation-order) * 200ms);
 }
 
-#bottom-line {
-    margin-bottom: 3rem;
+.project-header h2 {
+    font-family: var(--accent-font-family);
+    font-size: 1.25rem;
+    color: var(--foreground-clr-1);
+    text-transform: uppercase;
+    margin: 3rem 0 1.5rem 0;
+    animation: animateIn;
+    animation-duration: 1400ms;
+    animation-timing-function: var(--bezier);
+    animation-delay: calc(var(--animation-order) * 200ms);
 }
 
 .project-header p {
@@ -438,13 +451,14 @@ main {
 
 
 .next-project {
-    padding: 2rem 1.5rem 6rem 1.5rem;
+    padding: 8rem 1.5rem;
     font-family: var(--display-font-family);
     font-size: var(--header-three-size);
 }
 
 .next-project h2 a {
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--foreground-clr-1);
     line-height: 1.2;
 }
@@ -456,6 +470,8 @@ main {
 
 
 footer {
+    font-family: var(--accent-font-family);
+    text-transform: uppercase;
     display: flex;
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
@@ -466,7 +482,6 @@ footer {
 
 
 #copyright {
-
     font-size: 1rem;
     padding: 1rem 0;
     color: var(--midground-clr-1);
@@ -476,8 +491,13 @@ footer {
 
     font-size: 1rem;
     text-decoration: none;
-    color: var(--foreground-clr-1);
-    padding: 1rem 0;
+    color: var(--background-clr-1);
+    padding: 0.75rem 1.5rem;
+    background-color: var(--foreground-clr-1);
+    border-radius: 4rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -497,6 +517,7 @@ footer {
 .contact h1 {
     font-family: var(--display-font-family);
     font-size: var(--header-three-size);
+    text-transform: uppercase;
     line-height: 1.3;
     margin: 12rem 1.5rem 2rem 1.5rem;
 
@@ -520,11 +541,14 @@ footer {
     margin-right: 1rem;
     overflow: hidden;
     border: 1px solid var(--foreground-clr-1);
+
 }
 
 
 .social-links li a,
 .view-project a {
+    font-family: var(--accent-font-family);
+    text-transform: uppercase;
     font-size: 1rem;
     text-decoration: none;
     color: var(--foreground-clr-1);
@@ -566,6 +590,9 @@ footer {
         --header-two-size: 1.25rem;
     }
 
+    #xtra-large-display {
+        font-size: 3rem;
+    }
 
 
     .articles-grid-container {
@@ -585,6 +612,10 @@ footer {
     :root {
         --header-one-size: 3rem;
         --header-two-size: 1.5rem;
+    }
+
+    #xtra-large-display {
+        font-size: 4rem;
     }
 
 
@@ -624,6 +655,10 @@ footer {
         --header-one-size: 3rem;
         --header-two-size: 2rem;
     }
+
+    #xtra-large-display {
+        font-size: 7rem;
+    }
 }
 
 
@@ -636,14 +671,14 @@ screen and (orientation: landscape) {
 
     }
 
-    .featured h2 {
-        margin-bottom: 8rem;
+    #xtra-large-display {
+        font-size: 9rem;
     }
 
     .work {
         display: flex;
         flex-flow: column nowrap;
-        margin:5rem 1.5rem 6rem 1.5rem;
+        margin: 5rem 1.5rem 6rem 1.5rem;
         justify-content: flex-start;
         align-items: flex-start;
     }
@@ -660,7 +695,7 @@ screen and (orientation: landscape) {
         line-height: 1.65;
     }
 
-   /* .work img {
+    /* .work img {
         width: 60%;
     } */
 
