@@ -402,7 +402,7 @@ main {
 .project-asset {
     width: 50%;
     height: 50vw;
-    background-color: var(--clr-dark-1);
+    background-color: #000000;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -639,17 +639,25 @@ footer {
     }
 
 
+
+ 
+
+}
+
+@media screen and (max-width: 640px) {
+
     .half-width {
         width: 100%;
         display: flex;
         flex-flow: column wrap;
+        
+
     }
 
     .project-asset {
         width: 100vw;
         height: 100vw;
     }
-
 }
 
 
@@ -672,6 +680,8 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
         column-gap: 1.5rem;
     }
+
+
 }
 
 
