@@ -1,5 +1,4 @@
 
-
 body {
     font-family: var(--main-font-family);
     background-color: var(--background-clr-1);
@@ -203,7 +202,6 @@ main {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    border: red 1px solid;
 }
 
 
