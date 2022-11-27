@@ -84,7 +84,7 @@ abbr {
 
 
 header {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0 auto;
     animation: transitionInHeader 1400ms;
     animation-timing-function: ease-in-out;
@@ -198,7 +198,7 @@ main {
 .featured-work, .other-work {
 
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -493,7 +493,7 @@ footer {
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1440px;
     padding: 4rem 1.5rem;
 }
 
@@ -527,7 +527,7 @@ footer {
 
 .contact {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
 
 }
 
@@ -544,7 +544,7 @@ footer {
 .social-links {
     display: flex;
     flex-flow: row wrap;
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0rem 1.5rem;
 }
 
