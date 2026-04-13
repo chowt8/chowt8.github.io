@@ -391,7 +391,7 @@ main {
     overflow-y: hidden;
     justify-content: center;
     align-items: center;
-
+    position: relative;
 
 }
 
@@ -420,6 +420,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 }
 
@@ -592,6 +593,127 @@ footer {
 
 
 
+
+
+/* Film grain overlay system
+   Applied per-project via body class: .project-redfin, .project-cruise, .project-yelp, .project-hibbett
+   SVG feTurbulence generates grain at render time — no image assets needed.
+   Grain sits above images via ::after, blended with mix-blend-mode: soft-light.
+   Adjust opacity per project to tune intensity. */
+
+[class*="project-"] .full-width::after,
+[class*="project-"] .project-asset::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-repeat: repeat;
+    background-size: 200px 200px;
+}
+
+/* Redfin — medium grain, 3 octaves. Architectural/tactile feel. */
+.project-redfin .full-width::after,
+.project-redfin .project-asset::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: soft-light;
+    opacity: 0.35;
+}
+
+/* Cruise — fine grain, 2 octaves. Technical/precise feel. */
+.project-cruise .full-width::after,
+.project-cruise .project-asset::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.78' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: soft-light;
+    opacity: 0.28;
+}
+
+/* Yelp — softer grain, 4 octaves. Organic/consumer feel. */
+.project-yelp .full-width::after,
+.project-yelp .project-asset::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: soft-light;
+    opacity: 0.30;
+}
+
+/* Hibbett — coarser grain, 3 octaves. Streetwear/editorial feel. */
+.project-hibbett .full-width::after,
+.project-hibbett .project-asset::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.50' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: soft-light;
+    opacity: 0.38;
+}
+
+
+/* 3D model viewer
+   Drop-in replacement for .project-asset or .full-width.
+   Set data-model="path/to/model.glb" on the element.
+   Initialized by js/model-viewer.js. */
+
+.model-viewer-container {
+    position: relative;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.model-viewer-container:active {
+    cursor: grabbing;
+}
+
+.model-viewer-container canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.model-viewer-container .model-loader {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--clr-light-2);
+    font-family: var(--accent-font-family);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: opacity 400ms ease;
+}
+
+.model-viewer-container .model-loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.model-loader-bar-track {
+    width: 120px;
+    height: 1px;
+    background-color: var(--clr-dark-2);
+}
+
+.model-loader-bar-fill {
+    height: 1px;
+    width: 0%;
+    background-color: var(--clr-light-2);
+    transition: width 200ms ease;
+}
+
+/* Use as half-width panel (same size as .project-asset) */
+.model-viewer-container.half {
+    width: 50%;
+    height: 50vw;
+}
+
+/* Use as full-width section */
+.model-viewer-container.full {
+    width: 100%;
+    height: 70vh;
+}
 
 
 /* media queries */

@@ -23,9 +23,18 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;700&display=swap"
         rel="stylesheet">
 
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/"
+        }
+    }
+    </script>
+
 </head>
 
-<body>
+<body class="project-redfin">
     <a href="top"></a>
     <header>
         <nav>
@@ -55,38 +64,38 @@
     <main>
 
         <section class="full-width fade-in">
-            <img src="../images/redfin/project-estimate.jpg" alt="Example of a project estimate that a client recieves">
+            <img src="../images/redfin/project-estimate.jpg" alt="Example of a project estimate that a client recieves" fetchpriority="high" decoding="async">
         </section>
 
         <section class="full-width fade-in">
-            <img src="../images/redfin/job-list.jpg" alt="The main list of Redfin's Home Services projects">
+            <img src="../images/redfin/job-list.jpg" alt="The main list of Redfin's Home Services projects" decoding="async">
         </section>
 
 
         <section class="half-width ">
             <article class="project-asset fade-in">
                 <img class="cover-height-img" src="../images/redfin/move-work-item.jpg"
-                    alt="close up look of an interaction used to reorder work items" loading="lazy">
+                    alt="close up look of an interaction used to reorder work items" loading="lazy" decoding="async">
 
             </article>
 
             <article class="project-asset fade-in">
 
                 <img class="cover-height-img" src="../images/redfin/job-add-note.jpg" alt="A job note being created"
-                    loading="lazy">
+                    loading="lazy" decoding="async">
 
             </article>
 
         </section>
 
         <section class="full-width fade-in">
-            <img src="../images/redfin/redfin-cover.jpg" alt="map view and work item bulk actions" loading="lazy">
+            <img src="../images/redfin/redfin-cover.jpg" alt="map view and work item bulk actions" loading="lazy" decoding="async">
         </section>
 
 
         <section class="full-width fade-in">
             <img class="" src="../images/redfin/concierge-portfolio.jpg" alt="a portfolio concept for Concierges"
-                loading="lazy">
+                loading="lazy" decoding="async">
         </section>
 
 
@@ -147,6 +156,7 @@
     </footer>
 
     <script src="../js/observer.js"></script>
+    <script type="module" src="../js/model-viewer.js"></script>
 
 </body>
 
