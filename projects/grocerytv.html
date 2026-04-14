@@ -125,13 +125,14 @@
         <a id="back-to-top" href="#top">Back to top</a>
 
         <p id="copyright">
-            &copy; Tate Chow 2024
+            &copy; Tate Chow <span id="year"></span>
         </p>
 
 
     </footer>
 
     <script src="../js/observer.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
 
