@@ -5,7 +5,7 @@
 <head>
 
     <title>Tate Chow • Design Portfolio</title>
-    <link rel="icon" type="image/png" href="/images/favicon@2x.png">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
 
     <meta charset="UTF-8">
     <meta name="description"
@@ -28,15 +28,16 @@
 
 <body>
 
-    <header>
+    <header id="top">
         <nav>
             <p>Tate Chow</p>
             <p>Design Portfolio</p>
         </nav>
 
-       <div class="greeting">
-            <h1 id="xtra-large-display" style="--animation-order: 1;">Featured&nbsp;</h1>
-            <h1 id="xtra-large-display" style="--animation-order: 2;">Work&nbsp;</h1>
+        <div class="greeting">
+            <h1 class="xtra-large-display" style="--animation-order: 1;">Featured&nbsp;</h1>
+            <h1 class="xtra-large-display" style="--animation-order: 2;">Work&nbsp;</h1>
+        </div>
 
     </header>
 
@@ -156,17 +157,6 @@
 
                 </article>
 
-                <article class="grid-article">
-
-                    <img src="./images/hibbett-sports/hibbett-thumb.jpg" loading="lazy" decoding="async" alt="">
-
-                    <div class="info">
-                        <h5>Hibbett Sports, iOS & Android</h5>
-                        <p>2017</p>
-                    </div>
-
-                </article>
- 
             </div>
 
         </section>
@@ -192,13 +182,14 @@
         <a id="back-to-top" href="#top">Back to top</a>
 
         <p id="copyright">
-            &copy; Tate Chow 2024
+            &copy; Tate Chow <span id="year"></span>
         </p>
 
 
     </footer>
 
     <script src="./js/observer.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
 
